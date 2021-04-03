@@ -223,6 +223,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL830PositionsOfLargeGroups() {
+        String s = "abbxxxxzzy";
+        List<List<Integer>> list = new L830PositionsOfLargeGroups().largeGroupPositions(s);
+        int[] res = list.get(0).stream().mapToInt(Integer::intValue).toArray();
+        int[] expected = {3, 6};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL832FlippingAnImage() {
         int[][] nums = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
         int[][] res = new L832FlippingAnImage().flipAndInvertImage(nums);
