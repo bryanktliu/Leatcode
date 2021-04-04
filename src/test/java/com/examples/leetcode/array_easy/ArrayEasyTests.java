@@ -333,6 +333,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void L1013PartitionArrayIntoThreePartsWithEqualSum() {
+        int[] arr = {3, 3, 6, 5, -2, 2, 5, 1, -9, 4};
+        boolean res =
+                new L1013PartitionArrayIntoThreePartsWithEqualSum().canThreePartsEqualSum(arr);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1122RelativeSortArray() {
         int[] arr1 = {2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19};
         int[] arr2 = {2, 1, 4, 3, 9, 6};
