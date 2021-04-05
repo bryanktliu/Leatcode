@@ -209,6 +209,13 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL724FindPivotIndex() {
+        int[] nums = {1, 2, 3};
+        int res = new L724FindPivotIndex().pivotIndex(nums);
+        Assert.assertEquals(res, -1);
+    }
+
+    @Test
     public void testL746MinCostClimbingStairs() {
         int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
         int res = new L746MinCostClimbingStairs().minCostClimbingStairs(cost);
