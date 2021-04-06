@@ -5,12 +5,14 @@ public class L53MaximumSubarray {
 
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
-        int sum = 0;
-        for (int i : nums) {
-            sum += i;
-            max = Math.max(max, sum);
-            if (sum < 0) {
-                sum = 0;
+        int current = 0;
+        for (int num : nums) {
+            current += num;
+            if (current > max) {
+                max = current;
+            }
+            if (current <= 0) {
+                current = 0;
             }
         }
         return max;
