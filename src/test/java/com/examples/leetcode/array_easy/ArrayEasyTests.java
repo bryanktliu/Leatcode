@@ -325,6 +325,20 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1018BinaryPrefixDivisibleBy5() {
+        int[] nums = {
+            0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1
+        };
+        List<Boolean> res = new L1018BinaryPrefixDivisibleBy5().prefixesDivBy5(nums);
+        List<Boolean> expected =
+                Arrays.asList(
+                        true, false, false, true, true, true, false, false, false, false, false,
+                        false, false, false, false, true, true, false, false, false, false, false,
+                        false, false, false, false, false, false, true);
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1051HeightChecker() {
         int[] nums = {1, 1, 4, 2, 1, 3};
         int res = new L1051HeightChecker().heightChecker(nums);
