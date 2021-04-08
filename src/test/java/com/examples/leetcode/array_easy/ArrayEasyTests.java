@@ -209,6 +209,13 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL717OneBitAndTwoBitCharacters() {
+        int[] nums = {1, 0, 0};
+        boolean res = new L717OneBitAndTwoBitCharacters().isOneBitCharacter(nums);
+        Assert.assertTrue(res);
+    }
+
+    @Test
     public void testL724FindPivotIndex() {
         int[] nums = {1, 2, 3};
         int res = new L724FindPivotIndex().pivotIndex(nums);
