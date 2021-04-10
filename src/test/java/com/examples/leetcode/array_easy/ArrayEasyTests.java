@@ -18,9 +18,9 @@ public class ArrayEasyTests {
 
     @Test
     public void testL26RemoveDuplicates() {
-        int[] nums = {1, 1, 2};
+        int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int res = new L26RemoveDuplicates().removeDuplicates(nums);
-        Assert.assertEquals(res, 2);
+        Assert.assertEquals(res, 5);
     }
 
     @Test
@@ -188,9 +188,9 @@ public class ArrayEasyTests {
 
     @Test
     public void testL628MaximumProductOfThreeNumbers() {
-        int[] nums = {1, 2, 3};
+        int[] nums = {-1, -2, -3, -4};
         int res = new L628MaximumProductOfThreeNumbers().maximumProduct(nums);
-        Assert.assertEquals(res, 6);
+        Assert.assertEquals(res, -6);
     }
 
     @Test

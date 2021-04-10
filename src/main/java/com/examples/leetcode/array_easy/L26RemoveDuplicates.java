@@ -7,13 +7,13 @@ public class L26RemoveDuplicates {
         if (nums.length < 2) {
             return nums.length;
         }
-
         int index = 1;
-        int prev = nums[0];
+        int last = nums[0];
         for (int i = 1; i < nums.length; ++i) {
-            if (nums[i] != prev) {
-                prev = nums[i];
+            if (nums[i] != last) {
+                last = nums[i];
                 nums[index++] = nums[i];
+                last = nums[i];
             }
         }
         return index;
