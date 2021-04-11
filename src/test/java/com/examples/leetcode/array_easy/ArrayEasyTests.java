@@ -202,6 +202,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL674LongestContinuousIncreasingSubsequence() {
+        int[] nums = {1, 3, 5, 4, 7};
+        int res = new L674LongestContinuousIncreasingSubsequence().findLengthOfLCIS(nums);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL697DegreeOfAnArray() {
         int[] nums = {1, 2, 2, 3, 1};
         int res = new L697DegreeOfAnArray().findShortestSubArray(nums);
@@ -305,9 +313,18 @@ public class ArrayEasyTests {
     public void testL985SumOfEvenNumbersAfterQueries() {
         int[] nums = {1, 2, 3, 4};
         int[][] queries = {{1, 0}, {-3, 1}, {-4, 0}, {2, 3}};
-
         int[] res = new L985SumOfEvenNumbersAfterQueries().sumEvenAfterQueries(nums, queries);
         int[] expected = {8, 6, 2, 4};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL989AddToArrayFormOfInteger() {
+        int[] num = {1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3};
+        int k = 516;
+        List<Integer> res = new L989AddToArrayFormOfInteger().addToArrayForm(num, k);
+        List<Integer> expected =
+                Arrays.asList(1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 5, 7, 9);
         Assert.assertEquals(res, expected);
     }
 
