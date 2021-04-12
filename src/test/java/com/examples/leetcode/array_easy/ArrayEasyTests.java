@@ -238,6 +238,13 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL747LargestNumberAtLeastTwiceOfOthers() {
+        int[] nums = {3, 6, 1, 0};
+        int res = new L747LargestNumberAtLeastTwiceOfOthers().dominantIndex(nums);
+        Assert.assertEquals(res, 1);
+    }
+
+    @Test
     public void testL766ToeplitzMatrix() {
         int[][] nums = {{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}};
         boolean res = new L766ToeplitzMatrix().isToeplitzMatrix(nums);
