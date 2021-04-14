@@ -6,10 +6,10 @@ import java.util.Arrays;
 public class L35SearchInsertPosition {
 
     public int searchInsert(int[] nums, int target) {
-        int pos = Arrays.binarySearch(nums, target);
-        if (pos < 0) {
-            return -(pos + 1);
+        int index = Arrays.binarySearch(nums, target);
+        if (index < 0) {
+            return (index + 1) * -1;
         }
-        return pos;
+        return index;
     }
 }

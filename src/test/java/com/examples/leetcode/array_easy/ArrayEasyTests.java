@@ -33,8 +33,9 @@ public class ArrayEasyTests {
     @Test
     public void testL35SearchInsertPosition() {
         int[] nums = {1, 3, 5, 6};
-        int res = new L35SearchInsertPosition().searchInsert(nums, 5);
-        Assert.assertEquals(res, 2);
+        int target = 7;
+        int res = new L35SearchInsertPosition().searchInsert(nums, target);
+        Assert.assertEquals(res, 4);
     }
 
     @Test
@@ -430,6 +431,13 @@ public class ArrayEasyTests {
         int[] nums = {1, 2, 3};
         int res = new L1217MinimumCostToMoveChipsToTheSamePosition().minCostToMoveChips(nums);
         Assert.assertEquals(res, 1);
+    }
+
+    @Test
+    public void testL1232CheckIfItIsAStraightLine() {
+        int[][] coordinates = {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {6, 7}};
+        boolean res = new L1232CheckIfItIsAStraightLine().checkStraightLine(coordinates);
+        Assert.assertEquals(res, true);
     }
 
     @Test
