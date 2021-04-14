@@ -520,6 +520,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1346CheckIfNAndItsDoubleExist() {
+        int[] nums = {-2, 0, 10, -19, 4, 6, -8};
+        boolean res = new L1346CheckIfNAndItsDoubleExist().checkIfExist(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1351CountNegativeNumbersInASortedMatrix() {
         int[][] nums = {{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}};
         int res = new L1351CountNegativeNumbersInASortedMatrix().countNegatives(nums);
