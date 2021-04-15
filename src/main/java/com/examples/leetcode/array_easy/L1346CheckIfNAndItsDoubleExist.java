@@ -6,12 +6,12 @@ import java.util.HashSet;
 public class L1346CheckIfNAndItsDoubleExist {
 
     public boolean checkIfExist(int[] arr) {
-        HashSet<Integer> map = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
         for (int value : arr) {
-            if (map.contains(value * 2) || (value / 2 * 2 == value && map.contains(value / 2))) {
+            if (set.contains(value * 2) || (value / 2 * 2 == value && set.contains(value / 2))) {
                 return true;
             }
-            map.add(value);
+            set.add(value);
         }
         return false;
     }

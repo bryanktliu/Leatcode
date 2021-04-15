@@ -23,23 +23,27 @@ public class L228SumaryRanges {
         if (nums.length == 0) {
             return Collections.emptyList();
         }
-        List<String> ret = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         int start = 0;
+        int len = 0;
         for (int i = 1; i < nums.length; ++i) {
-            if (nums[i] > nums[i - 1] + 1) {
-                if (start == i - 1) {
-                    ret.add(String.valueOf(nums[start]));
+            if (nums[i] != nums[i - 1] + 1) {
+                if (len == 0) {
+                    list.add(Integer.toString(nums[start]));
                 } else {
-                    ret.add(nums[start] + "->" + nums[i - 1]);
+                    list.add(nums[start] + "->" + nums[start + len]);
                 }
+                len = 0;
                 start = i;
+            } else {
+                ++len;
             }
         }
-        if (start == nums.length - 1) {
-            ret.add(String.valueOf(nums[start]));
+        if (len == 0) {
+            list.add(Integer.toString(nums[start]));
         } else {
-            ret.add(nums[start] + "->" + nums[nums.length - 1]);
+            list.add(nums[start] + "->" + nums[start + len]);
         }
-        return ret;
+        return list;
     }
 }
