@@ -47,9 +47,9 @@ public class ArrayEasyTests {
 
     @Test
     public void testL66PlusOne() {
-        int[] nums = {1, 2, 3};
+        int[] nums = {8, 9, 9, 9};
         int[] res = new L66PlusOne().plusOne(nums);
-        int[] expected = {1, 2, 4};
+        int[] expected = {9, 0, 0, 0};
         Assert.assertEquals(res, expected);
     }
 
@@ -658,6 +658,17 @@ public class ArrayEasyTests {
         int[] nums = {2, 1, 2, 1, 2, 1, 2, 1, 2};
         List<Integer> res = new L1560MostVisitedSectorInACircularTrack().mostVisited(2, nums);
         List<Integer> expected = Collections.singletonList(2);
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL1566DetectPatternOfLengthMRepeatedKOrMoreTimes() {
+        int[] arr = {1, 2, 1, 2, 1, 1, 1, 3};
+        int m = 2;
+        int k = 2;
+        boolean res =
+                new L1566DetectPatternOfLengthMRepeatedKOrMoreTimes().containsPattern(arr, m, k);
+        boolean expected = true;
         Assert.assertEquals(res, expected);
     }
 
