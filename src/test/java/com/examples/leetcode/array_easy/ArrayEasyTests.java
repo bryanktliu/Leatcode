@@ -195,6 +195,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL643MaximumAverageSubarrayI() {
+        int[] nums = {5};
+        int k = 1;
+        double res = new L643MaximumAverageSubarrayI().findMaxAverage(nums, k);
+        double expected = 5;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL661ImageSmoother() {
         int[][] nums = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
         int[][] res = new L661ImageSmoother().imageSmoother(nums);
