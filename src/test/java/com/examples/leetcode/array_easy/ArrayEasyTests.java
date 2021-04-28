@@ -327,6 +327,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL941ValidMountainArray() {
+        int[] arr = {3, 5, 5};
+        boolean res = new L941ValidMountainArray().validMountainArray(arr);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL977SquaresOfASortedArray() {
         int[] nums = {-4, -1, 0, 3, 10};
         int[] res = new L977SquaresOfASortedArray().sortedSquares(nums);
