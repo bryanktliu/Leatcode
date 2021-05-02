@@ -182,8 +182,8 @@ public class ArrayEasyTests {
 
     @Test
     public void testL605CanPlaceFlowers() {
-        int[] nums = {1, 0, 0, 0, 1};
-        boolean res = new L605CanPlaceFlowers().canPlaceFlowers(nums, 1);
+        int[] nums = {0, 0};
+        boolean res = new L605CanPlaceFlowers().canPlaceFlowers(nums, 2);
         Assert.assertTrue(res);
     }
 
