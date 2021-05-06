@@ -8,23 +8,23 @@ public class L414ThirdMaxNumber {
         int second = Integer.MIN_VALUE;
         int third = Integer.MIN_VALUE;
         boolean found = false;
-        for (int i : nums) {
-            if (i == Integer.MIN_VALUE) {
+        for (int num : nums) {
+            if (num == Integer.MIN_VALUE) {
                 found = true;
             }
-            if (i > first) {
+            if (num > first) {
                 third = second;
                 second = first;
-                first = i;
-            } else if (i > second && i != first) {
+                first = num;
+            } else if (num > second && num != first) {
                 third = second;
-                second = i;
-            } else if (i > third && i != first && i != second) {
-                third = i;
+                second = num;
+            } else if (num > third && num != second && num != first) {
+                third = num;
             }
         }
         if (third == Integer.MIN_VALUE) {
-            if (found && second != Integer.MIN_VALUE) {
+            if (found && second > Integer.MIN_VALUE) {
                 return third;
             }
             return first;
