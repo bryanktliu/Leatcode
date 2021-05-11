@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/number-of-equivalent-domino-pairs/
- */
+/** https://leetcode.com/problems/number-of-equivalent-domino-pairs/ */
 public class L1128NumberOfEquivalentDominoPairs {
 
     public int numEquivDominoPairs(int[][] dominoes) {

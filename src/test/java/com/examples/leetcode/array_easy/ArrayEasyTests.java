@@ -430,7 +430,7 @@ public class ArrayEasyTests {
 
     @Test
     public void testL1128NumberOfEquivalentDominoPairs() {
-        int[][] dominoes = {{1,2},{2,1},{3,4},{5,6}};
+        int[][] dominoes = {{1, 2}, {2, 1}, {3, 4}, {5, 6}};
         int res = new L1128NumberOfEquivalentDominoPairs().numEquivDominoPairs(dominoes);
         int expected = 1;
         Assert.assertEquals(res, expected);
@@ -613,6 +613,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1437CheckIfAll1sAreAtLeastLengthKPlacesAway() {
+        int[] nums = {1, 0, 0, 0, 1, 0, 0, 1};
+        int k = 2;
+        boolean res = new L1437CheckIfAll1sAreAtLeastLengthKPlacesAway().kLengthApart(nums, k);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1450NumberOfStudentsDoingHomework() {
         int[] startTime = {1, 2, 3};
         int[] endTime = {3, 2, 7};
@@ -783,5 +792,17 @@ public class ArrayEasyTests {
         int[][] nums = {{1, 2, 3}, {3, 2, 1}};
         int res = new L1672RichestCustomerWealth().richestCustomer(nums);
         Assert.assertEquals(res, 6);
+    }
+
+    @Test
+    public void testL1773CountItemsMatchingARule() {
+        List<String> list1 = Arrays.asList("phone", "blue", "pixel");
+        List<String> list2 = Arrays.asList("computer", "silver", "lenovo");
+        List<String> list3 = Arrays.asList("phone", "gold", "iphone");
+        List<List<String>> list = Arrays.asList(list1, list2, list3);
+        String ruleKey = "color";
+        String ruleValue = "silver";
+        int res = new L1773CountItemsMatchingARule().countMatches(list, ruleKey, ruleValue);
+        Assert.assertEquals(res, 1);
     }
 }
