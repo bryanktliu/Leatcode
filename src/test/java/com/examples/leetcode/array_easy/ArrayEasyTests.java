@@ -429,6 +429,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1128NumberOfEquivalentDominoPairs() {
+        int[][] dominoes = {{1,2},{2,1},{3,4},{5,6}};
+        int res = new L1128NumberOfEquivalentDominoPairs().numEquivDominoPairs(dominoes);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1160FindWordsThatCanBeFormedByCharacters() {
         String[] words = {"cat", "bt", "hat", "tree"};
         String chars = "atach";
