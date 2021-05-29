@@ -795,6 +795,50 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1700NumberOfStudentsUnableToEatLunch() {
+        int[] students = {1, 1, 1, 0, 0, 1};
+        int[] sandwiches = {1, 0, 0, 0, 1, 1};
+        int res = new L1700NumberOfStudentsUnableToEatLunch().countStudents(students, sandwiches);
+        Assert.assertEquals(res, 3);
+    }
+
+    @Test
+    public void testL1732FindTheHighestAltitude() {
+        int[] gain = {-4, -3, -2, -1, 4, 3, 2};
+        int res = new L1732FindTheHighestAltitude().largestAltitude(gain);
+        Assert.assertEquals(res, 0);
+    }
+
+    @Test
+    public void testL1742MaximumNumberOfBallsInABox() {
+        int lowLimit = 5;
+        int highLimit = 15;
+        int res = new L1742MaximumNumberOfBallsInABox().countBalls(lowLimit, highLimit);
+        Assert.assertEquals(res, 2);
+    }
+
+    @Test
+    public void testL1748SumOfUniqueElements() {
+        int[] nums = {1, 2, 3, 2};
+        int res = new L1748SumOfUniqueElements().sumOfUnique(nums);
+        Assert.assertEquals(res, 0);
+    }
+
+    @Test
+    public void testL1752CheckIfArrayIsSortedAndRotated() {
+        int[] nums = {1, 2, 3};
+        boolean res = new L1752CheckIfArrayIsSortedAndRotated().check(nums);
+        Assert.assertEquals(res, true);
+    }
+
+    @Test
+    public void testL1758MinimumChangesToMakeAlternatingBinaryString() {
+        String s = "1111";
+        int res = new L1758MinimumChangesToMakeAlternatingBinaryString().minOperations(s);
+        Assert.assertEquals(res, 2);
+    }
+
+    @Test
     public void testL1773CountItemsMatchingARule() {
         List<String> list1 = Arrays.asList("phone", "blue", "pixel");
         List<String> list2 = Arrays.asList("computer", "silver", "lenovo");
@@ -804,5 +848,12 @@ public class ArrayEasyTests {
         String ruleValue = "silver";
         int res = new L1773CountItemsMatchingARule().countMatches(list, ruleKey, ruleValue);
         Assert.assertEquals(res, 1);
+    }
+
+    @Test
+    public void testL1869LongerContiguousSegmentsOfOnesThanZeros() {
+        String s = "111000";
+        boolean res = new L1869LongerContiguousSegmentsOfOnesThanZeros().checkZeroOnes(s);
+        Assert.assertEquals(res, false);
     }
 }
