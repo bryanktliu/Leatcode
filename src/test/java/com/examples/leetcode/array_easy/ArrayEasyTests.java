@@ -851,6 +851,40 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1779FindNearestPointThatHasTheSameXOrYCoordinate() {
+        int x = 3;
+        int y = 4;
+        int[][] points = {{3, 4}};
+        int res =
+                new L1779FindNearestPointThatHasTheSameXOrYCoordinate()
+                        .nearestValidPoint(x, y, points);
+        Assert.assertEquals(res, 0);
+    }
+
+    @Test
+    public void testL1827MinimumOperationsToMakeTheArrayIncreasing() {
+        int[] nums = {1, 5, 2, 4, 1};
+        int res = new L1827MinimumOperationsToMakeTheArrayIncreasing().minOperations(nums);
+        Assert.assertEquals(res, 14);
+    }
+
+    @Test
+    public void testL1848MinimumDistanceToTheTargetElement() {
+        int[] nums = {1};
+        int target = 1;
+        int start = 0;
+        int res = new L1848MinimumDistanceToTheTargetElement().getMinDistance(nums, target, start);
+        Assert.assertEquals(res, 0);
+    }
+
+    @Test
+    public void testL1854MaximumPopulationYear() {
+        int[][] logs = {{1950, 1961}, {1960, 1971}, {1970, 1981}};
+        int res = new L1854MaximumPopulationYear().maximumPopulation(logs);
+        Assert.assertEquals(res, 1960);
+    }
+
+    @Test
     public void testL1869LongerContiguousSegmentsOfOnesThanZeros() {
         String s = "111000";
         boolean res = new L1869LongerContiguousSegmentsOfOnesThanZeros().checkZeroOnes(s);
