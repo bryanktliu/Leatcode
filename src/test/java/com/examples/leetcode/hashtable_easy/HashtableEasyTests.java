@@ -25,4 +25,28 @@ public class HashtableEasyTests {
         int res = new L204CountPrimes().countPrimes(n);
         Assert.assertEquals(res, 4);
     }
+
+    @Test
+    public void testL205IsomorphicStrings() {
+        String s = "foo";
+        String t = "bar";
+        boolean res = new L205IsomorphicStrings().isIsomorphic(s, t);
+        Assert.assertEquals(res, false);
+    }
+
+    @Test
+    public void testL242ValidAnagram() {
+        String s = "zlap";
+        String t = "kcqx";
+        boolean res = new L242ValidAnagram().isAnagram(s, t);
+        Assert.assertEquals(res, false);
+    }
+
+    @Test
+    public void testL290WordPattern() {
+        String s = "abba";
+        String t = "dog cat cat fish";
+        boolean res = new L290WordPattern().wordPattern(s, t);
+        Assert.assertEquals(res, false);
+    }
 }
