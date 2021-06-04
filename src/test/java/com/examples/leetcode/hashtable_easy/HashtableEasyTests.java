@@ -80,4 +80,32 @@ public class HashtableEasyTests {
         int res = new L389FindTheDifference().findTheDifference(s, t);
         Assert.assertEquals(res, 'y');
     }
+
+    @Test
+    public void testL409LongestPalindrome() {
+        String s = "a";
+        int res = new L409LongestPalindrome().longestPalindrome(s);
+        Assert.assertEquals(res, 1);
+    }
+
+    @Test
+    public void testL463IslandPerimeter() {
+        int[][] grid = {{1, 0}};
+        int res = new L463IslandPerimeter().islandPerimeter(grid);
+        Assert.assertEquals(res, 4);
+    }
+
+    @Test
+    public void testL500KeyboardRow() {
+        String[] words = {"omk"};
+        String[] res = new L500KeyboardRow().findWords(words);
+        Assert.assertEquals(res, new String[] {});
+    }
+
+    @Test
+    public void testL575DistributeCandies() {
+        int[] candyType = {1, 1, 2, 3};
+        int res = new L575DistributeCandies().distributeCandies(candyType);
+        Assert.assertEquals(res, 2);
+    }
 }
