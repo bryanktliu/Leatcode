@@ -3,6 +3,10 @@ package com.examples.leetcode.hashtable_easy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class HashtableEasyTests {
 
     @Test
@@ -107,5 +111,76 @@ public class HashtableEasyTests {
         int[] candyType = {1, 1, 2, 3};
         int res = new L575DistributeCandies().distributeCandies(candyType);
         Assert.assertEquals(res, 2);
+    }
+
+    @Test
+    public void testL594LongestHarmoniousSubsequence() {
+        int[] nums = {1,2,3,4};
+        int res = new L594LongestHarmoniousSubsequence().findLHS(nums);
+        Assert.assertEquals(res, 2);
+    }
+
+    @Test
+    public void testL599MinimumIndexSumOfTwoLists() {
+        String[] list1 = {"Shogun","Tapioca Express","Burger King","KFC"};
+        String[] list2 = {"Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"};
+        String[] res = new L599MinimumIndexSumOfTwoLists().findRestaurant(list1, list2);
+        Assert.assertEquals(res, new String[] {"Shogun"});
+    }
+
+    @Test
+    public void testL645SetMismatch() {
+        int[] nums = {1,2,2,4};
+        int[] res = new L645SetMismatch().findErrorNums(nums);
+        Assert.assertEquals(res, new int[]{2,3});
+    }
+
+    @Test
+    public void testL690EmployeeImportance() {
+        L690EmployeeImportance.Employee employee1 = new L690EmployeeImportance.Employee(1, 5, Arrays.asList(2,3));
+        L690EmployeeImportance.Employee employee2 = new L690EmployeeImportance.Employee(2, 3, Collections.emptyList());
+        L690EmployeeImportance.Employee employee3 = new L690EmployeeImportance.Employee(3, 3, Collections.emptyList());
+        List<L690EmployeeImportance.Employee> employees = Arrays.asList(employee1,employee2,employee3);
+        int id = 1;
+        int res = new L690EmployeeImportance().getImportance(employees,id);
+        Assert.assertEquals(res, 11);
+    }
+
+    @Test
+    public void testL720LongestWordInDictionary() {
+        String[] words = {"wo","wor","worl","world"};
+        String res = new L720LongestWordInDictionary().longestWord(words);
+        Assert.assertEquals(res, "world");
+    }
+
+    @Test
+    public void testL748ShortestCompletingWord() {
+        String licensePlate = "1s3 PSt";
+        String[] words = {"step","steps","stripe","stepple"};
+        String res = new L748ShortestCompletingWord().shortestCompletingWord(licensePlate,words);
+        Assert.assertEquals(res, "steps");
+    }
+
+    @Test
+    public void testL771JewelsAndStones() {
+        String jewels = "z";
+        String stones = "ZZ";
+        int res = new L771JewelsAndStones().numJewelsInStones(jewels,stones);
+        Assert.assertEquals(res, 0);
+    }
+
+    @Test
+    public void testL811SubdomainVisitCount() {
+        String[] cpdomains = {"9001 discuss.leetcode.com"};
+        List<String> res = new L811SubdomainVisitCount().subdomainVisits(cpdomains);
+        Assert.assertEquals(res, Arrays.asList("9001 com", "9001 leetcode.com", "9001 discuss.leetcode.com"));
+    }
+
+    @Test
+    public void testL884UncommonWordsFromTwoSentences() {
+        String s1 = "this apple is sweet";
+        String s2 = "this apple is sour";
+        String[] res = new L884UncommonWordsFromTwoSentences().uncommonFromSentences(s1, s2);
+        Assert.assertEquals(res, new String[] {"sour", "sweet"});
     }
 }
