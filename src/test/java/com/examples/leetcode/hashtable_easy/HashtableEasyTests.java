@@ -10,6 +10,13 @@ import java.util.List;
 public class HashtableEasyTests {
 
     @Test
+    public void testL13RomanToInteger() {
+        String s = "MCMXCIV";
+        int res = new L13RomanToInteger().romanToInt(s);
+        Assert.assertEquals(res, 1994);
+    }
+
+    @Test
     public void testL136SingleNumber() {
         int[] nums = {2, 2, 1};
         int res = new L136SingleNumber().singleNumber(nums);
@@ -183,4 +190,13 @@ public class HashtableEasyTests {
         String[] res = new L884UncommonWordsFromTwoSentences().uncommonFromSentences(s1, s2);
         Assert.assertEquals(res, new String[] {"sour", "sweet"});
     }
+
+    @Test
+    public void testL953VerifyingAnAlienDictionary() {
+        String[] words = {"apple","app"};
+        String order = "abcdefghijklmnopqrstuvwxyz";
+        boolean res = new L953VerifyingAnAlienDictionary().isAlienSorted(words, order);
+        Assert.assertEquals(res, false);
+    }
+
 }
