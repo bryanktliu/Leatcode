@@ -31,15 +31,13 @@ public class L13RomanToInteger {
                 case 'M':
                     current = 1000;
             }
-            if(last > current) {
+            if (last > current) {
                 sum -= current;
             } else {
-                sum+= current;
+                sum += current;
             }
             last = current;
         }
         return sum;
     }
 }
-
-

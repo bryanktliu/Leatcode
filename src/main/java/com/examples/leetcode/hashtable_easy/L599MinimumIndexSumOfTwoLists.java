@@ -3,9 +3,7 @@ package com.examples.leetcode.hashtable_easy;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * https://leetcode.com/problems/minimum-index-sum-of-two-lists/
- */
+/** https://leetcode.com/problems/minimum-index-sum-of-two-lists/ */
 public class L599MinimumIndexSumOfTwoLists {
 
     public String[] findRestaurant(String[] list1, String[] list2) {

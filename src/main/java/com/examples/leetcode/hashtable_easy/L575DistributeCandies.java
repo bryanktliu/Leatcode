@@ -1,6 +1,5 @@
 package com.examples.leetcode.hashtable_easy;
 
-
 /** https://leetcode.com/problems/distribute-candies/ */
 public class L575DistributeCandies {
 

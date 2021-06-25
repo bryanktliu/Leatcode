@@ -13,18 +13,18 @@ public class L811SubdomainVisitCount {
         for (String cpdomain : cpdomains) {
             int views = 0;
             for (int j = 0; j < cpdomain.length(); ++j) {
-                if(cpdomain.charAt(j) == ' ') {
+                if (cpdomain.charAt(j) == ' ') {
                     views = Integer.parseInt(cpdomain.substring(0, j));
                     String domain = cpdomain.substring(j + 1);
-                    map.put(domain, views + map.getOrDefault(domain,0));
+                    map.put(domain, views + map.getOrDefault(domain, 0));
                 } else if (cpdomain.charAt(j) == '.') {
                     String domain = cpdomain.substring(j + 1);
-                    map.put(domain, views + map.getOrDefault(domain,0));
+                    map.put(domain, views + map.getOrDefault(domain, 0));
                 }
             }
         }
         List<String> list = new ArrayList<>();
-        for (Map.Entry<String,Integer> entry : map.entrySet()) {
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
             list.add(entry.getValue() + " " + entry.getKey());
         }
         return list;

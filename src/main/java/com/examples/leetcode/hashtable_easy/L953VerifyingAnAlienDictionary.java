@@ -1,10 +1,7 @@
 package com.examples.leetcode.hashtable_easy;
 
-import java.util.HashMap;
 
-/**
- * https://leetcode.com/problems/verifying-an-alien-dictionary/
- */
+/** https://leetcode.com/problems/verifying-an-alien-dictionary/ */
 public class L953VerifyingAnAlienDictionary {
 
     int[] dict = new int[26];

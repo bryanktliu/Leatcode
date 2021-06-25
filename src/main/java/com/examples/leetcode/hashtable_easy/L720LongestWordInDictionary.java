@@ -17,18 +17,18 @@ public class L720LongestWordInDictionary {
             }
         }
         int size = results.size();
-        if(size == 0) {
+        if (size == 0) {
             return "";
         }
         int index = -1;
         int length = 0;
         for (int i = 0; i < size; ++i) {
             int len = results.get(i).length();
-            if(len > length) {
+            if (len > length) {
                 index = i;
                 length = len;
-            } else if(len == length) {
-                if(results.get(i).compareTo(results.get(index)) < 0) {
+            } else if (len == length) {
+                if (results.get(i).compareTo(results.get(index)) < 0) {
                     index = i;
                     length = len;
                 }
@@ -39,13 +39,13 @@ public class L720LongestWordInDictionary {
     }
 
     public boolean check(String word) {
-        if(word.length() == 0) {
+        if (word.length() == 0) {
             return true;
         }
-        if(visited.containsKey(word)) {
+        if (visited.containsKey(word)) {
             return visited.get(word);
         }
-        if(!set.contains(word)) {
+        if (!set.contains(word)) {
             visited.put(word, false);
             return false;
         }

@@ -19,9 +19,9 @@ public class L748ShortestCompletingWord {
         int length = Integer.MAX_VALUE;
         int index = 0;
         for (int i = 0; i < words.length; ++i) {
-            if(check(words[i])) {
+            if (check(words[i])) {
                 int len = words[i].length();
-                if(len < length) {
+                if (len < length) {
                     length = len;
                     index = i;
                 }
