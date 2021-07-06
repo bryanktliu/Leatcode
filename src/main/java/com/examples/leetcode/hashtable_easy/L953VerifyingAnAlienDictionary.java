@@ -1,6 +1,5 @@
 package com.examples.leetcode.hashtable_easy;
 
-
 /** https://leetcode.com/problems/verifying-an-alien-dictionary/ */
 public class L953VerifyingAnAlienDictionary {
 

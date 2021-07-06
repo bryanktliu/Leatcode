@@ -190,11 +190,26 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void tesL804UniqueMorseCodeWords() {
+        String[] words = {"gin", "zen", "gig", "msg"};
+        int res = new L804UniqueMorseCodeWords().uniqueMorseRepresentations(words);
+        Assert.assertEquals(res, 2);
+    }
+
+    @Test
     public void testL811SubdomainVisitCount() {
         String[] cpdomains = {"9001 discuss.leetcode.com"};
         List<String> res = new L811SubdomainVisitCount().subdomainVisits(cpdomains);
         Assert.assertEquals(
                 res, Arrays.asList("9001 com", "9001 leetcode.com", "9001 discuss.leetcode.com"));
+    }
+
+    @Test
+    public void testL819MostCommonWord() {
+        String paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+        String[] banned = {"hit"};
+        String res = new L819MostCommonWord().mostCommonWord(paragraph, banned);
+        Assert.assertEquals(res, "ball");
     }
 
     @Test
