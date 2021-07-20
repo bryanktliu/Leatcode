@@ -213,6 +213,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL859BuddyStrings() {
+        String s = "aa";
+        String goal = "aa";
+        boolean res = new L859BuddyStrings().buddyStrings(s, goal);
+        Assert.assertEquals(res, true);
+    }
+
+    @Test
     public void testL884UncommonWordsFromTwoSentences() {
         String s1 = "this apple is sweet";
         String s2 = "this apple is sour";
@@ -221,10 +229,32 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL929UniqueEmailAddresses() {
+        String[] emails = {"test.email+alex@leetcode.com", "test.email@leetcode.com"};
+        int res = new L929UniqueEmailAddresses().numUniqueEmails(emails);
+        Assert.assertEquals(res, 3);
+    }
+
+    @Test
     public void testL953VerifyingAnAlienDictionary() {
         String[] words = {"apple", "app"};
         String order = "abcdefghijklmnopqrstuvwxyz";
         boolean res = new L953VerifyingAnAlienDictionary().isAlienSorted(words, order);
         Assert.assertEquals(res, false);
+    }
+
+    @Test
+    public void testL961NRepeatedElementInSize2NArray() {
+        int[] nums = {5, 1, 5, 2, 5, 3, 5, 4};
+        int res = new L961NRepeatedElementInSize2NArray().repeatedNTimes(nums);
+        Assert.assertEquals(res, 5);
+    }
+
+    @Test
+    public void testL997FindTheTownJudge() {
+        int n = 2;
+        int[][] trust = {{1, 2}};
+        int res = new L997FindTheTownJudge().findJudge(n, trust);
+        Assert.assertEquals(res, 2);
     }
 }
