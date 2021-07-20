@@ -1,1 +1,1 @@
-# Leatcode
+# Leetcode
