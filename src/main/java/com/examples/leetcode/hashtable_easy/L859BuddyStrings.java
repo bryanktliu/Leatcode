@@ -1,6 +1,5 @@
 package com.examples.leetcode.hashtable_easy;
 
-
 /** https://leetcode.com/problems/buddy-strings/ */
 public class L859BuddyStrings {
 

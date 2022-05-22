@@ -13,4 +13,12 @@ public class ArrayMediumTests {
         int[] expected = {1};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL665NonDecreasingArray() {
+        int[] nums = {4,2,1};
+        boolean res = new L665NonDecreasingArray().checkPossibility(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
 }
