@@ -1,12 +1,10 @@
 package com.examples.leetcode.array_medium;
 
-/**
- * https://leetcode.com/problems/non-decreasing-array/
- */
+/** https://leetcode.com/problems/non-decreasing-array/ */
 public class L665NonDecreasingArray {
 
     public boolean checkPossibility(int[] nums) {
-        if(nums.length <= 2) {
+        if (nums.length <= 2) {
             return true;
         }
         int passed = 0;
@@ -16,7 +14,7 @@ public class L665NonDecreasingArray {
                     return false;
                 } else {
                     ++passed;
-                    if(i >= 2 && nums[i - 2] > nums[i]) {
+                    if (i >= 2 && nums[i - 2] > nums[i]) {
                         nums[i] = nums[i - 1];
                     } else {
                         nums[0] = Integer.MIN_VALUE;

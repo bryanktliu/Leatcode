@@ -40,9 +40,6 @@ checkstyle {
     checkstyleTest.enabled = true
     configFile = file("${rootProject.projectDir}/tools/conf/checkstyle.xml")
 }
-checkstyleMain {
-    classpath += configurations.compile
-}
 tasks.withType(Checkstyle) {
     reports {
         xml.enabled false
