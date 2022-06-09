@@ -6,6 +6,16 @@ import org.testng.annotations.Test;
 public class ArrayMediumTests {
 
     @Test
+    public void testL220ContainsDuplicateIII() {
+        int[] nums = {1, 5, 9, 1, 5, 9};
+        int k = 2;
+        int t = 3;
+        boolean res = new L220ContainsDuplicateIII().containsNearbyAlmostDuplicate(nums, k, t);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL665NonDecreasingArray() {
         int[] nums = {4, 2, 1};
         boolean res = new L665NonDecreasingArray().checkPossibility(nums);
