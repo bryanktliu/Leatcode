@@ -6,6 +6,14 @@ import org.testng.annotations.Test;
 public class ArrayMediumTests {
 
     @Test
+    public void testL11ContainerWithMostWater() {
+        int[] height = {1, 1};
+        int res = new L11ContainerWithMostWater().maxArea(height);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL220ContainsDuplicateIII() {
         int[] nums = {1, 5, 9, 1, 5, 9};
         int k = 2;
