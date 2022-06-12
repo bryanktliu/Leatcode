@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_medium;
 
-/**
- * https://leetcode.com/problems/container-with-most-water/
- */
+/** https://leetcode.com/problems/container-with-most-water/ */
 public class L11ContainerWithMostWater {
 
     public int maxArea(int[] height) {

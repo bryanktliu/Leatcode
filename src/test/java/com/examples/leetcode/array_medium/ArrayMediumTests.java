@@ -1,5 +1,7 @@
 package com.examples.leetcode.array_medium;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,23 @@ public class ArrayMediumTests {
         int[] height = {1, 1};
         int res = new L11ContainerWithMostWater().maxArea(height);
         int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL15ThreeSum() {
+        int[] nums = {0};
+        List<List<Integer>> res = new L15ThreeSum().threeSum(nums);
+        List<List<Integer>> expected = new ArrayList<>();
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL16ThreeSumClosest() {
+        int[] nums = {1, 1, -1, -1, 3};
+        int target = -1;
+        int res = new L16ThreeSumClosest().threeSumClosest(nums, target);
+        int expected = -1;
         Assert.assertEquals(res, expected);
     }
 
