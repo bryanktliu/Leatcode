@@ -2,6 +2,7 @@ package com.examples.leetcode.array_medium;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -31,6 +32,16 @@ public class ArrayMediumTests {
         int expected = -1;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL33SearchInRotatedSortedArray() {
+        int[] nums = {4, 5, 6, 7, 0, 1, 2};
+        int target = 3;
+        int res = new L33SearchInRotatedSortedArray().search(nums, target);
+        int expected = -1;
+        Assert.assertEquals(res, expected);
+    }
+
 
     @Test
     public void testL220ContainsDuplicateIII() {
