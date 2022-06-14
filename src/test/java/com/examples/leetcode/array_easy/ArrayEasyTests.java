@@ -241,6 +241,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL733FloodFill() {
+        int[][] image = {{0, 0, 0}, {0, 0, 0}};
+        int sr = 0;
+        int sc = 0;
+        int newColor = 2;
+        int[][] res = new L733FloodFill().floodFill(image, sr, sc, newColor);
+        Assert.assertEquals(res, new int[][] {{2, 2, 2}, {2, 2, 2}});
+    }
+
+    @Test
     public void testL746MinCostClimbingStairs() {
         int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
         int res = new L746MinCostClimbingStairs().minCostClimbingStairs(cost);

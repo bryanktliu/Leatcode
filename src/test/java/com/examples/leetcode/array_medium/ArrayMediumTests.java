@@ -2,7 +2,6 @@ package com.examples.leetcode.array_medium;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -41,7 +40,6 @@ public class ArrayMediumTests {
         int expected = -1;
         Assert.assertEquals(res, expected);
     }
-
 
     @Test
     public void testL220ContainsDuplicateIII() {
