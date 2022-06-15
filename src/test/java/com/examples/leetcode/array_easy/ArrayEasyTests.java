@@ -160,6 +160,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL495TeemoAttacking() {
+        int[] timeSeries = {1, 2};
+        int duration = 2;
+        int res = new L495TeemoAttacking().findPoisonedDuration(timeSeries, duration);
+        Assert.assertEquals(res, 3);
+    }
+
+    @Test
     public void testL509FibonacciNumber() {
         int res = new L509FibonacciNumber().fib(4);
         Assert.assertEquals(res, 3);
