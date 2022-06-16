@@ -353,6 +353,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL976LargestPerimeterTriangle() {
+        int[] nums = {1, 2, 1};
+        int res = new L976LargestPerimeterTriangle().largestPerimeter(nums);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL977SquaresOfASortedArray() {
         int[] nums = {-4, -1, 0, 3, 10};
         int[] res = new L977SquaresOfASortedArray().sortedSquares(nums);
