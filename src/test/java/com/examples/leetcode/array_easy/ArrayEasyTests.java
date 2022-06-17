@@ -153,6 +153,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL455AssignCookies() {
+        int[] g = {1, 2};
+        int[] s = {1, 2, 3};
+        int res = new L455AssignCookies().findContentChildren(g, s);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL485MaxConsecutiveOnes() {
         int[] nums = {1, 1, 0, 1, 1, 1};
         int res = new L485MaxConsecutiveOnes().findMaxConsecutiveOnes(nums);
