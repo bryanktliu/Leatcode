@@ -362,6 +362,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL944DeleteColumnsToMakeSorted() {
+        String[] strs = {"a", "b"};
+        int res = new L944DeleteColumnsToMakeSorted().minDeletionSize(strs);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL976LargestPerimeterTriangle() {
         int[] nums = {1, 2, 1};
         int res = new L976LargestPerimeterTriangle().largestPerimeter(nums);
