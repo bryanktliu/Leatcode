@@ -289,6 +289,18 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL806NumberOfLinesToWriteString() {
+        int[] widths = {
+            4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+            10, 10, 10, 10
+        };
+        String s = "bbbcccdddaaa";
+        int[] res = new L806NumberOfLinesToWriteString().numberOfLines(widths, s);
+        int[] expected = {2, 4};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL830PositionsOfLargeGroups() {
         String s = "abbxxxxzzy";
         List<List<Integer>> list = new L830PositionsOfLargeGroups().largeGroupPositions(s);
