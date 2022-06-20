@@ -177,6 +177,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL506RelativeRanks() {
+        int[] score = {10, 3, 8, 9, 4};
+        String[] res = new L506RelativeRanks().findRelativeRanks(score);
+        String[] expected = {"Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL509FibonacciNumber() {
         int res = new L509FibonacciNumber().fib(4);
         Assert.assertEquals(res, 3);

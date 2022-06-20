@@ -1,6 +1,7 @@
 package com.examples.leetcode.array_medium;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /** https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/ */
 public class L2280MinimumLinesToRepresentALineChart {
@@ -9,7 +10,7 @@ public class L2280MinimumLinesToRepresentALineChart {
         if (stockPrices.length <= 2) {
             return stockPrices.length - 1;
         }
-        Arrays.sort(stockPrices, (a, b) -> (a[0] - b[0]));
+        Arrays.sort(stockPrices, Comparator.comparingInt(a -> a[0]));
         int lastX = stockPrices[0][0] - stockPrices[1][0];
         int lastY = stockPrices[0][1] - stockPrices[1][1];
         int count = 1;
