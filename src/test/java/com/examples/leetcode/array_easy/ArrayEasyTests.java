@@ -343,6 +343,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL892SurfaceAreaOf3DShapes() {
+        int[][] grid = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+        int res = new L892SurfaceAreaOf3DShapes().surfaceArea(grid);
+        int expected = 32;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL896MonotonicArray() {
         int[] nums = {1, 2, 2, 3};
         boolean res = new L896MonotonicArray().isMonotonic(nums);
