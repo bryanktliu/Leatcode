@@ -746,6 +746,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1528ShuffleString() {
+        String s = "abc";
+        int[] indices = {0, 1, 2};
+        String res = new L1528ShuffleString().restoreString(s, indices);
+        String expected = "abc";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1534CountGoodTriplets() {
         int[] nums = {3, 0, 1, 1, 9, 7};
         int res = new L1534CountGoodTriplets().countGoodTriplets(nums, 7, 2, 3);
