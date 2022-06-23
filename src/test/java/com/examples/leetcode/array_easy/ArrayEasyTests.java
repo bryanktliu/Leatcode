@@ -245,6 +245,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL682BaseballGame() {
+        String[] ops = {"5","-2","4","C","D","9","+","+"};
+        int res = new L682BaseballGame().calPoints(ops);
+        int expected = 27;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL697DegreeOfAnArray() {
         int[] nums = {1, 2, 2, 3, 1};
         int res = new L697DegreeOfAnArray().findShortestSubArray(nums);
