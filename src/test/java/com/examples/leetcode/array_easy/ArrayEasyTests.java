@@ -260,6 +260,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL704BinarySearch() {
+        int[] nums = {-1,0,3,5,9,12};
+        int target = 2;
+        int res = new L704BinarySearch().search(nums, target);
+        int expected = -1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL717OneBitAndTwoBitCharacters() {
         int[] nums = {1, 0, 0};
         boolean res = new L717OneBitAndTwoBitCharacters().isOneBitCharacter(nums);
