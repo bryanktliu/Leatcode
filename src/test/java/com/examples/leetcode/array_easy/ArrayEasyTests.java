@@ -885,6 +885,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1662CheckIfTwoStringArraysAreEquivalent() {
+        String[] word1 = {"a", "cb"};
+        String[] word2 = {"ab", "c"};
+        boolean res = new L1662CheckIfTwoStringArraysAreEquivalent().arrayStringsAreEqual(word1, word2);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1672RichestCustomerWealth() {
         int[][] nums = {{1, 2, 3}, {3, 2, 1}};
         int res = new L1672RichestCustomerWealth().richestCustomer(nums);
