@@ -1,10 +1,7 @@
 package com.examples.leetcode.array_easy;
 
-import java.util.Stack;
 
-/**
- * https://leetcode.com/problems/baseball-game/
- */
+/** https://leetcode.com/problems/baseball-game/ */
 public class L682BaseballGame {
 
     public int calPoints(String[] ops) {

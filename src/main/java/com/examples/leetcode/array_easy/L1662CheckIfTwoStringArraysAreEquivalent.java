@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
- */
+/** https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/ */
 public class L1662CheckIfTwoStringArraysAreEquivalent {
 
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {

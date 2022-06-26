@@ -246,7 +246,7 @@ public class ArrayEasyTests {
 
     @Test
     public void testL682BaseballGame() {
-        String[] ops = {"5","-2","4","C","D","9","+","+"};
+        String[] ops = {"5", "-2", "4", "C", "D", "9", "+", "+"};
         int res = new L682BaseballGame().calPoints(ops);
         int expected = 27;
         Assert.assertEquals(res, expected);
@@ -261,7 +261,7 @@ public class ArrayEasyTests {
 
     @Test
     public void testL704BinarySearch() {
-        int[] nums = {-1,0,3,5,9,12};
+        int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 2;
         int res = new L704BinarySearch().search(nums, target);
         int expected = -1;
@@ -833,6 +833,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1598CrawlerLogFolder() {
+        String[] logs = {"d1/", "d2/", "./", "d3/", "../", "d31/"};
+        int res = new L1598CrawlerLogFolder().minOperations(logs);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1608SpecialArrayWithXElements() {
         int[] nums = {3, 5};
         int res = new L1608SpecialArrayWithXElements().specialArray(nums);
@@ -888,7 +896,8 @@ public class ArrayEasyTests {
     public void testL1662CheckIfTwoStringArraysAreEquivalent() {
         String[] word1 = {"a", "cb"};
         String[] word2 = {"ab", "c"};
-        boolean res = new L1662CheckIfTwoStringArraysAreEquivalent().arrayStringsAreEqual(word1, word2);
+        boolean res =
+                new L1662CheckIfTwoStringArraysAreEquivalent().arrayStringsAreEqual(word1, word2);
         boolean expected = false;
         Assert.assertEquals(res, expected);
     }
