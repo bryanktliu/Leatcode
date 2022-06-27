@@ -918,6 +918,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1710MaximumUnitsOnATruck() {
+        int[][] boxTypes = {{5,10},{2,5},{4,7},{3,9}};
+        int truckSize = 10;
+        int res = new L1710MaximumUnitsOnATruck().maximumUnits(boxTypes, truckSize);
+        int expected = 91;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1732FindTheHighestAltitude() {
         int[] gain = {-4, -3, -2, -1, 4, 3, 2};
         int res = new L1732FindTheHighestAltitude().largestAltitude(gain);
