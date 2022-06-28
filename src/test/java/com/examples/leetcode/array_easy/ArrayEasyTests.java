@@ -293,6 +293,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL744FindSmallestLetterGreaterThanTarget() {
+        char[] letters = {'c', 'f', 'j'};
+        char target = 'c';
+        char res =
+                new L744FindSmallestLetterGreaterThanTarget().nextGreatestLetter(letters, target);
+        char expected = 'f';
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL746MinCostClimbingStairs() {
         int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
         int res = new L746MinCostClimbingStairs().minCostClimbingStairs(cost);
