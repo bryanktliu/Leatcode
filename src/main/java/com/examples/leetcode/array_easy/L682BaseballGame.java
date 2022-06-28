@@ -1,6 +1,5 @@
 package com.examples.leetcode.array_easy;
 
-
 /** https://leetcode.com/problems/baseball-game/ */
 public class L682BaseballGame {
 

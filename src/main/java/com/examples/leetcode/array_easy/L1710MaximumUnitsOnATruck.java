@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/maximum-units-on-a-truck/
- */
+/** https://leetcode.com/problems/maximum-units-on-a-truck/ */
 public class L1710MaximumUnitsOnATruck {
 
     public int maximumUnits(int[][] boxTypes, int truckSize) {

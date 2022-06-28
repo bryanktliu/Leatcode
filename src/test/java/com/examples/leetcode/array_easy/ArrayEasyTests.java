@@ -710,6 +710,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1441BuildAnArrayWithStackOperations() {
+        int[] target = {1, 2, 3};
+        int n = 3;
+        List<String> res = new L1441BuildAnArrayWithStackOperations().buildArray(target, n);
+        List<String> expected = Arrays.asList("Push", "Push", "Push");
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1450NumberOfStudentsDoingHomework() {
         int[] startTime = {1, 2, 3};
         int[] endTime = {3, 2, 7};
@@ -919,7 +928,7 @@ public class ArrayEasyTests {
 
     @Test
     public void testL1710MaximumUnitsOnATruck() {
-        int[][] boxTypes = {{5,10},{2,5},{4,7},{3,9}};
+        int[][] boxTypes = {{5, 10}, {2, 5}, {4, 7}, {3, 9}};
         int truckSize = 10;
         int res = new L1710MaximumUnitsOnATruck().maximumUnits(boxTypes, truckSize);
         int expected = 91;
