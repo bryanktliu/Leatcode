@@ -494,6 +494,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1037ValidBoomerang() {
+        int[][] points = {{1, 1}, {2, 2}, {3, 3}};
+        boolean res = new L1037ValidBoomerang().isBoomerang(points);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1051HeightChecker() {
         int[] nums = {1, 1, 4, 2, 1, 3};
         int res = new L1051HeightChecker().heightChecker(nums);
