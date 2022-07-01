@@ -954,6 +954,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1725NumberOfRectanglesThatCanFormTheLargestSquare() {
+        int[][] rectangles = {{2, 3}, {3, 7}, {4, 3}, {3, 7}};
+        int res =
+                new L1725NumberOfRectanglesThatCanFormTheLargestSquare()
+                        .countGoodRectangles(rectangles);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1732FindTheHighestAltitude() {
         int[] gain = {-4, -3, -2, -1, 4, 3, 2};
         int res = new L1732FindTheHighestAltitude().largestAltitude(gain);
