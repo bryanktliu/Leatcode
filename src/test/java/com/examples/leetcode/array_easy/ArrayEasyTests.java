@@ -1023,6 +1023,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1816TruncateSentence() {
+        String s = "What is the solution to this problem";
+        int k = 4;
+        String res = new L1816TruncateSentence().truncateSentence(s, k);
+        String expected = "What is the solution";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1827MinimumOperationsToMakeTheArrayIncreasing() {
         int[] nums = {1, 5, 2, 4, 1};
         int res = new L1827MinimumOperationsToMakeTheArrayIncreasing().minOperations(nums);
