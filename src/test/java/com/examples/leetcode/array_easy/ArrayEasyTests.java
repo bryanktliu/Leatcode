@@ -1032,6 +1032,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1822SignOfTheProductOfAnArray() {
+        int[] nums = {1, 5, 0, 2, -3};
+        int res = new L1822SignOfTheProductOfAnArray().arraySign(nums);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1827MinimumOperationsToMakeTheArrayIncreasing() {
         int[] nums = {1, 5, 2, 4, 1};
         int res = new L1827MinimumOperationsToMakeTheArrayIncreasing().minOperations(nums);
