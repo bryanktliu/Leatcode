@@ -1068,4 +1068,14 @@ public class ArrayEasyTests {
         boolean res = new L1869LongerContiguousSegmentsOfOnesThanZeros().checkZeroOnes(s);
         Assert.assertEquals(res, false);
     }
+
+    @Test
+    public void testL1886DetermineWhetherMatrixCanBeObtainedByRotation() {
+        int[][] mat = {{0, 1}, {1, 1}};
+        int[][] target = {{1, 0}, {0, 1}};
+        boolean res =
+                new L1886DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat, target);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
 }
