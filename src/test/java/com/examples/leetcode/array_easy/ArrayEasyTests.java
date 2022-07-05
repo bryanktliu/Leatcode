@@ -502,6 +502,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1046LastStoneWeight() {
+        int[] stones = {1};
+        int res = new L1046LastStoneWeight().lastStoneWeight(stones);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1051HeightChecker() {
         int[] nums = {1, 1, 4, 2, 1, 3};
         int res = new L1051HeightChecker().heightChecker(nums);
