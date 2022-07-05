@@ -574,6 +574,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1207UniqueNumberOfOccurrences() {
+        int[] arr = {1, 2};
+        boolean res = new L1207UniqueNumberOfOccurrences().uniqueOccurrences(arr);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1217MinimumCostToMoveChipsToTheSamePosition() {
         int[] nums = {1, 2, 3};
         int res = new L1217MinimumCostToMoveChipsToTheSamePosition().minCostToMoveChips(nums);
