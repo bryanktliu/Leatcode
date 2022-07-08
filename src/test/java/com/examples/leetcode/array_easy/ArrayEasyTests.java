@@ -393,6 +393,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL908SmallestRangeI() {
+        int[] nums = {0, 10};
+        int k = 2;
+        int res = new L908SmallestRangeI().smallestRangeI(nums, k);
+        int expected = 6;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL914XOfAKindInADeckOfCards() {
         int[] deck = {1, 2, 3, 4, 4, 3, 2, 1};
         boolean res = new L914XOfAKindInADeckOfCards().hasGroupsSizeX(deck);
