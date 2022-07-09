@@ -336,6 +336,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL812LargestTriangleArea() {
+        int[][] points = {{1, 0}, {0, 0}, {0, 1}};
+        double res = new L812LargestTriangleArea().largestTriangleArea(points);
+        double expected = 0.50000;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL830PositionsOfLargeGroups() {
         String s = "abbxxxxzzy";
         List<List<Integer>> list = new L830PositionsOfLargeGroups().largeGroupPositions(s);
