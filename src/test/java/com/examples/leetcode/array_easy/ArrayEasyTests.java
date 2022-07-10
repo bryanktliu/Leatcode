@@ -361,6 +361,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL860LemonadeChange() {
+        int[] bills = {5, 5, 10, 10, 20};
+        boolean res = new L860LemonadeChange().lemonadeChange(bills);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL867TransposeMatrix() {
         int[][] nums = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] res = new L867TransposeMatrix().transpose(nums);
