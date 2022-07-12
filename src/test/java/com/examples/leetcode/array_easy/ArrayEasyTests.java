@@ -1119,4 +1119,13 @@ public class ArrayEasyTests {
         boolean expected = false;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL1909RemoveOneElementToMakeTheArrayStrictlyIncreasing() {
+        int[] nums = {2, 3, 1, 2};
+        boolean res =
+                new L1909RemoveOneElementToMakeTheArrayStrictlyIncreasing().canBeIncreasing(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
 }
