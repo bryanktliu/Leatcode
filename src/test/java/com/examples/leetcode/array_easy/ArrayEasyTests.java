@@ -344,6 +344,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL821ShortestDistanceToACharacter() {
+        String s = "aaab";
+        char c = 'b';
+        int[] res = new L821ShortestDistanceToACharacter().shortestToChar(s, c);
+        int[] expected = new int[] {3, 2, 1, 0};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL830PositionsOfLargeGroups() {
         String s = "abbxxxxzzy";
         List<List<Integer>> list = new L830PositionsOfLargeGroups().largeGroupPositions(s);
