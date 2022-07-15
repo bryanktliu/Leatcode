@@ -1,32 +1,34 @@
 package com.examples.leetcode.array_easy;
 
-import java.util.Arrays;
 
 /** https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/ */
 public class L1005MaximizeSumOfArrayAfterKNegations {
 
     public int largestSumAfterKNegations(int[] nums, int k) {
-        Arrays.sort(nums);
-        int sum = 0;
-        int index = 0;
-        while (k > 0 && index < nums.length) {
-            if (nums[index] < 0) {
-                --k;
-                sum -= nums[index];
-            } else if (nums[index] > 0) {
-                if (k == 1) {
-                    sum -= nums[index];
-                } else {
-                    sum += nums[index];
-                }
-                k = 0;
-            } else {
-                k = 0;
-            }
-            ++index;
+        int[] count = new int[201];
+        for (int num : nums) {
+            ++count[num + 100];
         }
-        for (int i = index; i < nums.length; ++i) {
-            sum += nums[i];
+        int sum = 0;
+        int absMin = Integer.MAX_VALUE;
+        for (int i = 0; i < count.length; ++i) {
+            if (count[i] == 0) {
+                continue;
+            }
+            for (int j = 0; j < count[i]; ++j) {
+                int num = i - 100;
+                if (k > 0 && num < 0) {
+                    num = -num;
+                    --k;
+                }
+                sum += num;
+                if (absMin > num) {
+                    absMin = num;
+                }
+            }
+        }
+        if (k % 2 == 1) {
+            sum -= absMin * 2;
         }
         return sum;
     }

@@ -514,6 +514,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1005MaximizeSumOfArrayAfterKNegations() {
+        int[] nums = {3, -1, 0, 2};
+        int k = 3;
+        int res = new L1005MaximizeSumOfArrayAfterKNegations().largestSumAfterKNegations(nums, k);
+        int expected = 6;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1018BinaryPrefixDivisibleBy5() {
         int[] nums = {
             0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1
