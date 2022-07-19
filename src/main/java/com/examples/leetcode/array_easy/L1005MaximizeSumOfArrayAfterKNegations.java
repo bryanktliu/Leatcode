@@ -1,6 +1,5 @@
 package com.examples.leetcode.array_easy;
 
-
 /** https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/ */
 public class L1005MaximizeSumOfArrayAfterKNegations {
 

@@ -1146,4 +1146,12 @@ public class ArrayEasyTests {
         boolean expected = false;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL1929ConcatenationOfArray() {
+        int[] nums = {1, 3, 2, 1};
+        int[] res = new L1929ConcatenationOfArray().getConcatenation(nums);
+        int[] expected = {1, 3, 2, 1, 1, 3, 2, 1};
+        Assert.assertEquals(res, expected);
+    }
 }
