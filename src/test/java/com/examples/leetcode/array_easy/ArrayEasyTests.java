@@ -1154,4 +1154,12 @@ public class ArrayEasyTests {
         int[] expected = {1, 3, 2, 1, 1, 3, 2, 1};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2016MaximumDifferenceBetweenIncreasingElements() {
+        int[] nums = {9, 4, 3, 2};
+        int res = new L2016MaximumDifferenceBetweenIncreasingElements().maximumDifference(nums);
+        int expected = -1;
+        Assert.assertEquals(res, expected);
+    }
 }
