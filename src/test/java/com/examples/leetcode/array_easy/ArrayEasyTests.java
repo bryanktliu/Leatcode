@@ -1156,6 +1156,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1991FindTheMiddleIndexInArray() {
+        int[] nums = {1, -1, 4};
+        int res = new L1991FindTheMiddleIndexInArray().findMiddleIndex(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2016MaximumDifferenceBetweenIncreasingElements() {
         int[] nums = {9, 4, 3, 2};
         int res = new L2016MaximumDifferenceBetweenIncreasingElements().maximumDifference(nums);
