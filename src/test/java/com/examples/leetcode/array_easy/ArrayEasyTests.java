@@ -1170,4 +1170,16 @@ public class ArrayEasyTests {
         int expected = -1;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2032TwoOutOfThree() {
+        int[] nums1 = {3, 1};
+        int[] nums2 = {2, 3};
+        int[] nums3 = {1, 2};
+        List<Integer> res = new L2032TwoOutOfThree().twoOutOfThree(nums1, nums2, nums3);
+        List<Integer> expected = Arrays.asList(1, 2, 3);
+        Collections.sort(res);
+        Collections.sort(expected);
+        Assert.assertEquals(res, expected);
+    }
 }
