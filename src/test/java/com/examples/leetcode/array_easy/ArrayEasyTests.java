@@ -1148,6 +1148,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1920BuildArrayFromPermutation() {
+        int[] nums = {5, 0, 1, 2, 3, 4};
+        int[] res = new L1920BuildArrayFromPermutation().buildArray(nums);
+        int[] expected = {4, 5, 0, 1, 2, 3};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1929ConcatenationOfArray() {
         int[] nums = {1, 3, 2, 1};
         int[] res = new L1929ConcatenationOfArray().getConcatenation(nums);
