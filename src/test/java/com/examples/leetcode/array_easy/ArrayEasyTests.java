@@ -1180,6 +1180,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2022Convert1DArrayInto2DArray() {
+        int[] original = {1, 2, 3};
+        int m = 1;
+        int n = 3;
+        int[][] res = new L2022Convert1DArrayInto2DArray().construct2DArray(original, m, n);
+        int[][] expected = {{1, 2, 3}};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2032TwoOutOfThree() {
         int[] nums1 = {3, 1};
         int[] nums2 = {2, 3};
