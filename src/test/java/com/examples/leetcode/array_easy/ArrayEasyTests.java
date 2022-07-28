@@ -1172,6 +1172,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2006CountNumberOfPairsWithAbsoluteDifferenceK() {
+        int[] nums = {1, 3};
+        int k = 3;
+        int res = new L2006CountNumberOfPairsWithAbsoluteDifferenceK().countKDifference(nums, k);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2016MaximumDifferenceBetweenIncreasingElements() {
         int[] nums = {9, 4, 3, 2};
         int res = new L2016MaximumDifferenceBetweenIncreasingElements().maximumDifference(nums);
