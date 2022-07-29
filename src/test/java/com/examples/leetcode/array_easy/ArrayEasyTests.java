@@ -1209,4 +1209,12 @@ public class ArrayEasyTests {
         Collections.sort(expected);
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2057SmallestIndexWithEqualValue() {
+        int[] nums = {4, 3, 2, 1};
+        int res = new L2057SmallestIndexWithEqualValue().smallestEqual(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
 }
