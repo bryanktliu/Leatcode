@@ -1164,6 +1164,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1961CheckIfStringIsAPrefixOfArray() {
+        String s = "iloveleetcode";
+        String[] words = {"apples", "i", "love", "leetcode"};
+        boolean res = new L1961CheckIfStringIsAPrefixOfArray().isPrefixString(s, words);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1991FindTheMiddleIndexInArray() {
         int[] nums = {1, -1, 4};
         int res = new L1991FindTheMiddleIndexInArray().findMiddleIndex(nums);
