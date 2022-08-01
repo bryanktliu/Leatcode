@@ -1148,6 +1148,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1913MaximumProductDifferenceBetweenTwoPairs() {
+        int[] nums = {4, 2, 5, 9, 7, 4, 8};
+        int res = new L1913MaximumProductDifferenceBetweenTwoPairs().maxProductDifference(nums);
+        int expected = 64;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1920BuildArrayFromPermutation() {
         int[] nums = {5, 0, 1, 2, 3, 4};
         int[] res = new L1920BuildArrayFromPermutation().buildArray(nums);
