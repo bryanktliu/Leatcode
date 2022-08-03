@@ -1234,4 +1234,13 @@ public class ArrayEasyTests {
         int expected = 2;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2085CountCommonWordsWithOneOccurrence() {
+        String[] words1 = {"b", "bb", "bbb"};
+        String[] words2 = {"a", "aa", "aaa"};
+        int res = new L2085CountCommonWordsWithOneOccurrence().countWords(words1, words2);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
