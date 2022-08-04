@@ -1236,6 +1236,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2073TimeNeededToBuyTickets() {
+        int[] tickets = {5, 1, 1, 1};
+        int k = 0;
+        int res = new L2073TimeNeededToBuyTickets().timeRequiredToBuy(tickets, k);
+        int expected = 8;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2085CountCommonWordsWithOneOccurrence() {
         String[] words1 = {"b", "bb", "bbb"};
         String[] words2 = {"a", "aa", "aaa"};
