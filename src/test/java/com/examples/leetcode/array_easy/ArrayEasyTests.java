@@ -1252,4 +1252,14 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2089FindTargetIndicesAfterSortingArray() {
+        int[] nums = {1, 2, 5, 2, 3};
+        int target = 3;
+        List<Integer> res =
+                new L2089FindTargetIndicesAfterSortingArray().targetIndices(nums, target);
+        List<Integer> expected = Collections.singletonList(3);
+        Assert.assertEquals(res, expected);
+    }
 }
