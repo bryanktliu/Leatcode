@@ -1228,6 +1228,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2053KthDistinctStringInAnArray() {
+        String[] arr = {"aaa", "aa", "a"};
+        int k = 1;
+        String res = new L2053KthDistinctStringInAnArray().kthDistinct(arr, k);
+        String expected = "aaa";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2057SmallestIndexWithEqualValue() {
         int[] nums = {4, 3, 2, 1};
         int res = new L2057SmallestIndexWithEqualValue().smallestEqual(nums);
