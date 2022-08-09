@@ -1271,4 +1271,12 @@ public class ArrayEasyTests {
         List<Integer> expected = Collections.singletonList(3);
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2108FindFirstPalindromicStringInTheArray() {
+        String[] words = {"notapalindrome", "racecar"};
+        String res = new L2108FindFirstPalindromicStringInTheArray().firstPalindrome(words);
+        String expected = "racecar";
+        Assert.assertEquals(res, expected);
+    }
 }
