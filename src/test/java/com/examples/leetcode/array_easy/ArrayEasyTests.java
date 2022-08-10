@@ -1254,6 +1254,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2078TwoFurthestHousesWithDifferentColors() {
+        int[] colors = {1, 8, 3, 8, 3};
+        int res = new L2078TwoFurthestHousesWithDifferentColors().maxDistance(colors);
+        int expected = 4;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2085CountCommonWordsWithOneOccurrence() {
         String[] words1 = {"b", "bb", "bbb"};
         String[] words2 = {"a", "aa", "aaa"};
