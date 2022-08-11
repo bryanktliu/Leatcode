@@ -635,7 +635,7 @@ public class ArrayEasyTests {
     public void testL1232CheckIfItIsAStraightLine() {
         int[][] coordinates = {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {6, 7}};
         boolean res = new L1232CheckIfItIsAStraightLine().checkStraightLine(coordinates);
-        Assert.assertEquals(res, true);
+        Assert.assertTrue(res);
     }
 
     @Test
@@ -1048,7 +1048,7 @@ public class ArrayEasyTests {
     public void testL1752CheckIfArrayIsSortedAndRotated() {
         int[] nums = {1, 2, 3};
         boolean res = new L1752CheckIfArrayIsSortedAndRotated().check(nums);
-        Assert.assertEquals(res, true);
+        Assert.assertTrue(res);
     }
 
     @Test
@@ -1125,7 +1125,7 @@ public class ArrayEasyTests {
     public void testL1869LongerContiguousSegmentsOfOnesThanZeros() {
         String s = "111000";
         boolean res = new L1869LongerContiguousSegmentsOfOnesThanZeros().checkZeroOnes(s);
-        Assert.assertEquals(res, false);
+        Assert.assertFalse(res);
     }
 
     @Test
