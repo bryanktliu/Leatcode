@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/
- */
+/** https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/ */
 public class L2133CheckIfEveryRowAndColumnContainsAllNumbers {
 
     public boolean checkValid(int[][] matrix) {
