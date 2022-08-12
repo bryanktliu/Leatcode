@@ -1287,4 +1287,20 @@ public class ArrayEasyTests {
         String expected = "racecar";
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2133CheckIfEveryRowAndColumnContainsAllNumbers() {
+        int[][] matrix = {{1, 1, 1}, {1, 2, 3}, {1, 2, 3}};
+        boolean res = new L2133CheckIfEveryRowAndColumnContainsAllNumbers().checkValid(matrix);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2144MinimumCostOfBuyingCandiesWithDiscount() {
+        int[] cost = {6, 5, 7, 9, 2, 2};
+        int res = new L2144MinimumCostOfBuyingCandiesWithDiscount().minimumCost(cost);
+        int expected = 23;
+        Assert.assertEquals(res, expected);
+    }
 }
