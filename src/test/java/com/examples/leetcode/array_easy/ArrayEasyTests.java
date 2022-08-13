@@ -1139,6 +1139,17 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1893CheckIfAllTheIntegersInARangeAreCovered() {
+        int[][] ranges = {{1, 10}, {10, 20}};
+        int left = 21;
+        int right = 21;
+        boolean res =
+                new L1893CheckIfAllTheIntegersInARangeAreCovered().isCovered(ranges, left, right);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1909RemoveOneElementToMakeTheArrayStrictlyIncreasing() {
         int[] nums = {2, 3, 1, 2};
         boolean res =
