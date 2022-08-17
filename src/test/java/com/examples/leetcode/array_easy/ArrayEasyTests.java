@@ -1314,4 +1314,13 @@ public class ArrayEasyTests {
         int expected = 23;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2154KeepMultiplyingFoundValuesByTwo() {
+        int[] nums = {2, 7, 9};
+        int original = 4;
+        int res = new L2154KeepMultiplyingFoundValuesByTwo().findFinalValue(nums, original);
+        int expected = 4;
+        Assert.assertEquals(res, expected);
+    }
 }
