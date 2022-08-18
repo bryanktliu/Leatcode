@@ -1323,4 +1323,12 @@ public class ArrayEasyTests {
         int expected = 4;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2164SortEvenAndOddIndicesIndependently() {
+        int[] nums = {2, 1};
+        int[] res = new L2164SortEvenAndOddIndicesIndependently().sortEvenOdd(nums);
+        int[] expected = {2, 1};
+        Assert.assertEquals(res, expected);
+    }
 }
