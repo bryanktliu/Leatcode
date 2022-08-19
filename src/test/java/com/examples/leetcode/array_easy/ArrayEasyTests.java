@@ -1331,4 +1331,13 @@ public class ArrayEasyTests {
         int[] expected = {2, 1};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2176CountEqualAndDivisiblePairsInAnArray() {
+        int[] nums = {1, 2, 3, 4};
+        int k = 1;
+        int res = new L2176CountEqualAndDivisiblePairsInAnArray().countPairs(nums, k);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
