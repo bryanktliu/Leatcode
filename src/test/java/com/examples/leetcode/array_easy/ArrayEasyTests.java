@@ -1340,4 +1340,13 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2185CountingWordsWithAGivenPrefix() {
+        String[] words = {"leetcode", "win", "loops", "success"};
+        String pref = "code";
+        int res = new L2185CountingWordsWithAGivenPrefix().prefixCount(words, pref);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
