@@ -1349,4 +1349,13 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2190MostFrequentNumberFollowingKeyInAnArray() {
+        int[] nums = {2, 2, 2, 2, 3};
+        int key = 2;
+        int res = new L2190MostFrequentNumberFollowingKeyInAnArray().mostFrequent(nums, key);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
 }
