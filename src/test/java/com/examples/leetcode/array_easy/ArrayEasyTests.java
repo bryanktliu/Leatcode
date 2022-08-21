@@ -733,6 +733,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1356SortIntegersByTheNumberOf1Bits() {
+        int[] arr = {1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1};
+        int[] res = new L1356SortIntegersByTheNumberOf1Bits().sortByBits(arr);
+        int[] expected = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1380LuckyNumbersInAMatrix() {
         int[][] nums = {{3, 7, 8}, {9, 11, 13}, {15, 16, 17}};
         List<Integer> res = new L1380LuckyNumbersInAMatrix().luckyNumbers(nums);
