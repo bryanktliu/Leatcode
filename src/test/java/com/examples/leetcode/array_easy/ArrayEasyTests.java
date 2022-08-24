@@ -1366,4 +1366,12 @@ public class ArrayEasyTests {
         int expected = 2;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2206DivideArrayIntoEqualPairs() {
+        int[] nums = {1, 2, 3, 4};
+        boolean res = new L2206DivideArrayIntoEqualPairs().divideArray(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
 }

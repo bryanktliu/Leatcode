@@ -1,7 +1,6 @@
 package com.examples.leetcode.array_easy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /** https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/ */
 public class L1356SortIntegersByTheNumberOf1Bits {
