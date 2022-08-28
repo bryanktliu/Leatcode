@@ -1374,4 +1374,12 @@ public class ArrayEasyTests {
         boolean expected = false;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2210CountHillsAndValleysInAnArray() {
+        int[] nums = {6, 6, 5, 5, 4, 1};
+        int res = new L2210CountHillsAndValleysInAnArray().countHillValley(nums);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
