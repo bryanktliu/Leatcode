@@ -1382,4 +1382,15 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testsL2215FindTheDifferenceOfTwoArrays() {
+        int[] nums1 = {1, 2, 3, 3};
+        int[] nums2 = {1, 1, 2, 2};
+        List<List<Integer>> res =
+                new L2215FindTheDifferenceOfTwoArrays().findDifference(nums1, nums2);
+        List<List<Integer>> expected =
+                Arrays.asList(Collections.singletonList(3), Collections.emptyList());
+        Assert.assertEquals(res, expected);
+    }
 }
