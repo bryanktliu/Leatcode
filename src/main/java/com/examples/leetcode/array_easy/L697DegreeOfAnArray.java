@@ -1,62 +1,47 @@
 package com.examples.leetcode.array_easy;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 /** https://leetcode.com/problems/degree-of-an-array */
 public class L697DegreeOfAnArray {
 
     public int findShortestSubArray(int[] nums) {
-        if (nums.length == 0) {
-            return 0;
-        } else if (nums.length == 1) {
-            return 1;
-        }
-
-        int[] counts = new int[50000];
-        int degree = 0;
-        for (int i : nums) {
-            ++counts[i];
-            degree = Math.max(degree, counts[i]);
-        }
-        if (degree < 2) {
-            return degree;
-        }
-
-        Map<Integer, Integer> map = new ConcurrentHashMap<>();
-        int length = Integer.MAX_VALUE;
-        int start = 0;
-        int end = nums.length - 1;
-        while (start <= end) {
-            for (; start <= end; ++start) {
-                if (counts[nums[start]] == degree) {
-                    Integer pos = map.get(nums[start]);
-                    if (pos == null) {
-                        map.put(nums[start], start);
-                        ++start;
-                        break;
-                    } else if (pos > start) {
-                        length = Math.min(length, pos - start + 1);
-                        map.put(nums[start], -1);
-                        break;
-                    }
-                }
-            }
-            for (; end >= start; --end) {
-                if (counts[nums[end]] == degree) {
-                    Integer pos = map.get(nums[end]);
-                    if (pos == null) {
-                        map.put(nums[end], end);
-                        --end;
-                        break;
-                    } else if (pos < end && pos >= 0) {
-                        length = Math.min(length, end - pos + 1);
-                        map.put(nums[end], -1);
-                        break;
-                    }
-                }
+        int size = 0;
+        for (int num : nums) {
+            if (num > size) {
+                size = num;
             }
         }
-        return length;
+        ++size;
+        int[] start = new int[size];
+        int[] end = new int[size];
+        int[] count = new int[size];
+        for (int i = 0; i < nums.length; ++i) {
+            if (start[nums[i]] == 0) {
+                start[nums[i]] = i + 1;
+            }
+            ++count[nums[i]];
+            end[nums[i]] = i + 1;
+        }
+        int max = -1;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < count.length; ++i) {
+            if (count[i] > max) {
+                list = new ArrayList<>();
+                list.add(i);
+                max = count[i];
+            } else if (count[i] == max) {
+                list.add(i);
+            }
+        }
+        int minDistance = 500000;
+        for (int num : list) {
+            int dif = end[num] - start[num] + 1;
+            if (dif < minDistance) {
+                minDistance = dif;
+            }
+        }
+        return minDistance;
     }
 }

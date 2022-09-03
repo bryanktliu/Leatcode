@@ -1393,4 +1393,17 @@ public class ArrayEasyTests {
                 Arrays.asList(Collections.singletonList(3), Collections.emptyList());
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2383MinimumHoursOfTrainingToWinACompetition() {
+        int initialEnergy = 2;
+        int initialExperience = 4;
+        int[] energy = {1};
+        int[] experience = {3};
+        int res =
+                new L2383MinimumHoursOfTrainingToWinACompetition()
+                        .minNumberOfHours(initialEnergy, initialExperience, energy, experience);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
