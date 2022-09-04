@@ -1368,6 +1368,17 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2200FindAllKDistantIndicesInAnArray() {
+        int[] nums = {2,2,2,2,2};
+        int key = 2;
+        int k = 2;
+        List<Integer> res = new L2200FindAllKDistantIndicesInAnArray().findKDistantIndices(nums, key, k);
+        List<Integer> expected = Arrays.asList(0,1,2,3,4);
+        Assert.assertEquals(res, expected);
+    }
+
+
+    @Test
     public void testL2206DivideArrayIntoEqualPairs() {
         int[] nums = {1, 2, 3, 4};
         boolean res = new L2206DivideArrayIntoEqualPairs().divideArray(nums);
