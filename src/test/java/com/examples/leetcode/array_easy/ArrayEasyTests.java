@@ -1369,14 +1369,14 @@ public class ArrayEasyTests {
 
     @Test
     public void testL2200FindAllKDistantIndicesInAnArray() {
-        int[] nums = {2,2,2,2,2};
+        int[] nums = {2, 2, 2, 2, 2};
         int key = 2;
         int k = 2;
-        List<Integer> res = new L2200FindAllKDistantIndicesInAnArray().findKDistantIndices(nums, key, k);
-        List<Integer> expected = Arrays.asList(0,1,2,3,4);
+        List<Integer> res =
+                new L2200FindAllKDistantIndicesInAnArray().findKDistantIndices(nums, key, k);
+        List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4);
         Assert.assertEquals(res, expected);
     }
-
 
     @Test
     public void testL2206DivideArrayIntoEqualPairs() {
@@ -1402,6 +1402,14 @@ public class ArrayEasyTests {
                 new L2215FindTheDifferenceOfTwoArrays().findDifference(nums1, nums2);
         List<List<Integer>> expected =
                 Arrays.asList(Collections.singletonList(3), Collections.emptyList());
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2239FindClosestNumberToZero() {
+        int[] nums = {2, -1, 1};
+        int res = new L2239FindClosestNumberToZero().findClosestNumber(nums);
+        int expected = 1;
         Assert.assertEquals(res, expected);
     }
 
