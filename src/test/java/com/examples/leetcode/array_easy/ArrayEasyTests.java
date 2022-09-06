@@ -1414,6 +1414,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2248IntersectionOfMultipleArrays() {
+        int[][] nums = {{1, 2, 3}, {4, 5, 6}};
+        List<Integer> res = new L2248IntersectionOfMultipleArrays().intersection(nums);
+        List<Integer> expected = Collections.emptyList();
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
