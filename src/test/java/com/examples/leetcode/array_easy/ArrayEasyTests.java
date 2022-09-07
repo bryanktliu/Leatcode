@@ -1422,6 +1422,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2255CountPrefixesOfAGivenString() {
+        String[] words = {"a", "a"};
+        String s = "aa";
+        int res = new L2255CountPrefixesOfAGivenString().countPrefixes(words, s);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
