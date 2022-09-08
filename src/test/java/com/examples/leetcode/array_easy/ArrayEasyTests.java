@@ -1324,6 +1324,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2148CountElementsWithStrictlySmallerAndGreaterElements() {
+        int[] nums = {-3, 3, 3, 90};
+        int res = new L2148CountElementsWithStrictlySmallerAndGreaterElements().countElements(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2154KeepMultiplyingFoundValuesByTwo() {
         int[] nums = {2, 7, 9};
         int original = 4;
