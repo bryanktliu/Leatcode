@@ -1439,6 +1439,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2293MinMaxGame() {
+        int[] nums = {3};
+        int res = new L2293MinMaxGame().minMaxGame(nums);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
