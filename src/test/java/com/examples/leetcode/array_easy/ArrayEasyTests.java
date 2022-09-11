@@ -1447,6 +1447,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testtL2303CalculateAmountPaidInTaxes() {
+        int[][] brackets = {{1, 0}, {4, 25}, {5, 50}};
+        int income = 2;
+        double res = new L2303CalculateAmountPaidInTaxes().calculateTax(brackets, income);
+        double expected = 0.25;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
