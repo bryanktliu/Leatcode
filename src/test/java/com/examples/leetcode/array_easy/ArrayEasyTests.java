@@ -1308,6 +1308,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2114MaximumNumberOfWordsFoundInSentences() {
+        String[] sentences = {"please wait", "continue to fight", "continue to win"};
+        int res = new L2114MaximumNumberOfWordsFoundInSentences().mostWordsFound(sentences);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2133CheckIfEveryRowAndColumnContainsAllNumbers() {
         int[][] matrix = {{1, 1, 1}, {1, 2, 3}, {1, 2, 3}};
         boolean res = new L2133CheckIfEveryRowAndColumnContainsAllNumbers().checkValid(matrix);
