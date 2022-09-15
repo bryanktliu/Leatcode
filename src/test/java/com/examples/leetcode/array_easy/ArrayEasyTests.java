@@ -1464,6 +1464,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2319CheckIfMatrixIsXMatrix() {
+        int[][] grid = {{5, 7, 0}, {0, 3, 1}, {0, 5, 0}};
+        boolean res = new L2319CheckIfMatrixIsXMatrix().checkXMatrix(grid);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
