@@ -1472,6 +1472,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2341MaximumNumberOfPairsInArray() {
+        int[] nums = {1, 1};
+        int[] res = new L2341MaximumNumberOfPairsInArray().numberOfPairs(nums);
+        int[] expected = {1, 0};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
