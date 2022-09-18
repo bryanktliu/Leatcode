@@ -72,9 +72,10 @@ public class ArrayEasyTests {
 
     @Test
     public void testL119PascalTriangle2() {
-        List<Integer> list = new L119PascalTriangle2().getRow(5);
+        int rowIndex = 0;
+        List<Integer> list = new L119PascalTriangle2().getRow(rowIndex);
         int[] res = list.stream().mapToInt(Integer::intValue).toArray();
-        int[] expected = {1, 4, 6, 4, 1};
+        int[] expected = {1};
         Assert.assertEquals(res, expected);
     }
 
@@ -207,9 +208,10 @@ public class ArrayEasyTests {
 
     @Test
     public void testL605CanPlaceFlowers() {
-        int[] nums = {0, 0};
-        boolean res = new L605CanPlaceFlowers().canPlaceFlowers(nums, 2);
-        Assert.assertTrue(res);
+        int[] flowerbed = {1, 0, 0, 0, 1};
+        int n = 2;
+        boolean res = new L605CanPlaceFlowers().canPlaceFlowers(flowerbed, n);
+        Assert.assertFalse(res);
     }
 
     @Test
@@ -1047,9 +1049,10 @@ public class ArrayEasyTests {
 
     @Test
     public void testL1748SumOfUniqueElements() {
-        int[] nums = {1, 2, 3, 2};
+        int[] nums = {1, 1, 1, 1, 1};
         int res = new L1748SumOfUniqueElements().sumOfUnique(nums);
-        Assert.assertEquals(res, 0);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
     }
 
     @Test
@@ -1476,6 +1479,15 @@ public class ArrayEasyTests {
         int[] nums = {1, 1};
         int[] res = new L2341MaximumNumberOfPairsInArray().numberOfPairs(nums);
         int[] expected = {1, 0};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2347BestPokerHand() {
+        int[] ranks = {4, 4, 2, 4, 4};
+        char[] suits = {'d', 'a', 'a', 'b', 'b'};
+        String res = new L2347BestPokerHand().bestHand(ranks, suits);
+        String expected = "Three of a Kind";
         Assert.assertEquals(res, expected);
     }
 
