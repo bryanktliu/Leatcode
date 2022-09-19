@@ -1492,6 +1492,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2367NumberOfArithmeticTriplets() {
+        int[] nums = {4, 5, 6, 7, 8, 9};
+        int diff = 2;
+        int res = new L2367NumberOfArithmeticTriplets().arithmeticTriplets(nums, diff);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2383MinimumHoursOfTrainingToWinACompetition() {
         int initialEnergy = 2;
         int initialExperience = 4;
