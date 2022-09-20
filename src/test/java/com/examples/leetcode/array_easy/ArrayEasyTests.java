@@ -1492,6 +1492,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2357MakeArrayZeroBySubtractingEqualAmounts() {
+        int[] nums = {0};
+        int res = new L2357MakeArrayZeroBySubtractingEqualAmounts().minimumOperations(nums);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2367NumberOfArithmeticTriplets() {
         int[] nums = {4, 5, 6, 7, 8, 9};
         int diff = 2;
