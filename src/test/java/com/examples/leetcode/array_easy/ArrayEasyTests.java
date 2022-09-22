@@ -1500,6 +1500,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2363MergeSimilarItems() {
+        int[][] items1 = {{1, 1}, {3, 2}, {2, 3}};
+        int[][] items2 = {{2, 1}, {3, 2}, {1, 3}};
+        List<List<Integer>> res = new L2363MergeSimilarItems().mergeSimilarItems(items1, items2);
+        List<List<Integer>> expected =
+                Arrays.asList(Arrays.asList(1, 4), Arrays.asList(2, 4), Arrays.asList(3, 4));
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2367NumberOfArithmeticTriplets() {
         int[] nums = {4, 5, 6, 7, 8, 9};
         int diff = 2;
