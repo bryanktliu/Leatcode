@@ -1530,4 +1530,12 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2404MostFrequentEvenElement() {
+        int[] nums = {4, 4, 4, 9, 2, 4};
+        int res = new L2404MostFrequentEvenElement().mostFrequentEven(nums);
+        int expected = 4;
+        Assert.assertEquals(res, expected);
+    }
 }
