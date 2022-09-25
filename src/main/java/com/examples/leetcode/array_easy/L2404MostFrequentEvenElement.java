@@ -1,6 +1,5 @@
 package com.examples.leetcode.array_easy;
 
-
 /** https://leetcode.com/problems/most-frequent-even-element/ */
 public class L2404MostFrequentEvenElement {
 

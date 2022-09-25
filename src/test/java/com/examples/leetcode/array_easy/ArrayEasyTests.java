@@ -1532,6 +1532,17 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2399CheckDistancesBetweenSameLetters() {
+        String s = "aa";
+        int[] distance = {
+            1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        };
+        boolean res = new L2399CheckDistancesBetweenSameLetters().checkDistances(s, distance);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2404MostFrequentEvenElement() {
         int[] nums = {4, 4, 4, 9, 2, 4};
         int res = new L2404MostFrequentEvenElement().mostFrequentEven(nums);
