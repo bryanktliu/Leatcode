@@ -1532,6 +1532,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2389LongestSubsequenceWithLimitedSum() {
+        int[] nums = {2, 3, 4, 5};
+        int[] queries = {1};
+        int[] res = new L2389LongestSubsequenceWithLimitedSum().answerQueries(nums, queries);
+        int[] expected = new int[] {0};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2399CheckDistancesBetweenSameLetters() {
         String s = "aa";
         int[] distance = {
