@@ -1558,4 +1558,13 @@ public class ArrayEasyTests {
         int expected = 4;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2418SortThePeople() {
+        String[] names = {"Alice", "Bob", "Bob"};
+        int[] heights = {155, 185, 150};
+        String[] res = new L2418SortThePeople().sortPeople(names, heights);
+        String[] expected = new String[] {"Bob", "Alice", "Bob"};
+        Assert.assertEquals(res, expected);
+    }
 }
