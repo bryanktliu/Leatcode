@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class L2418SortThePeople {
 
     public String[] sortPeople(String[] names, int[] heights) {
-        HashMap<Integer, String> map = new HashMap();
+        HashMap<Integer, String> map = new HashMap<>();
         for (int i = 0; i < names.length; ++i) {
             map.put(heights[i], names[i]);
         }

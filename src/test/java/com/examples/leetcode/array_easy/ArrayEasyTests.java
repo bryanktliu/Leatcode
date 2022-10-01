@@ -1541,6 +1541,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2395FindSubarraysWithEqualSum() {
+        int[] nums = {1, 2, 3, 4, 5};
+        boolean res = new L2395FindSubarraysWithEqualSum().findSubarrays(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2399CheckDistancesBetweenSameLetters() {
         String s = "aa";
         int[] distance = {
