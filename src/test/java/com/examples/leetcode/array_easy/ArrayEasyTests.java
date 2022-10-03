@@ -1303,6 +1303,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2099FindSubsequenceOfLengthKWithTheLargestSum() {
+        int[] nums = {-1, -2, 3, 4};
+        int k = 3;
+        int[] res = new L2099FindSubsequenceOfLengthKWithTheLargestSum().maxSubsequence(nums, k);
+        int[] expected = new int[] {-1, 3, 4};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2108FindFirstPalindromicStringInTheArray() {
         String[] words = {"notapalindrome", "racecar"};
         String res = new L2108FindFirstPalindromicStringInTheArray().firstPalindrome(words);
