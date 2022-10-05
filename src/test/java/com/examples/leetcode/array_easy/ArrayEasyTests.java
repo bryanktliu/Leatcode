@@ -1250,6 +1250,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2037MinimumNumberOfMovesToSeatEveryone() {
+        int[] seats = {4, 1, 5, 9};
+        int[] students = {1, 3, 2, 6};
+        int res = new L2037MinimumNumberOfMovesToSeatEveryone().minMovesToSeat(seats, students);
+        int expected = 7;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2053KthDistinctStringInAnArray() {
         String[] arr = {"aaa", "aa", "a"};
         int k = 1;
