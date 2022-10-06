@@ -1493,6 +1493,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2335MinimumAmountOfTimeToFillCups() {
+        int[] amount = {5, 4, 4};
+        int res = new L2335MinimumAmountOfTimeToFillCups().fillCups(amount);
+        int expected = 7;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2341MaximumNumberOfPairsInArray() {
         int[] nums = {1, 1};
         int[] res = new L2341MaximumNumberOfPairsInArray().numberOfPairs(nums);
