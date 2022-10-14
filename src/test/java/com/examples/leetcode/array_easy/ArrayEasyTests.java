@@ -1601,4 +1601,13 @@ public class ArrayEasyTests {
         String[] expected = new String[] {"Bob", "Alice", "Bob"};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2432TheEmployeeThatWorkedOnTheLongestTask() {
+        int n = 26;
+        int[][] logs = {{1, 1}, {3, 7}, {2, 12}, {7, 17}};
+        int res = new L2432TheEmployeeThatWorkedOnTheLongestTask().hardestWorker(n, logs);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
 }
