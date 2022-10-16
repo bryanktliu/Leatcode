@@ -1211,6 +1211,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1995CountSpecialQuadruplets() {
+        int[] nums = {3, 3, 6, 4, 5};
+        int res = new L1995CountSpecialQuadruplets().countQuadruplets(nums);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2006CountNumberOfPairsWithAbsoluteDifferenceK() {
         int[] nums = {1, 3};
         int k = 3;
