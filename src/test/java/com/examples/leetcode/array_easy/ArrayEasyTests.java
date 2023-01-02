@@ -1618,4 +1618,16 @@ public class ArrayEasyTests {
         int expected = 3;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2515ShortestDistanceToTargetStringInACircularArray() {
+        String[] words = {"hello", "i", "am", "leetcode", "hello"};
+        String target = "hello";
+        int startIndex = 1;
+        int res =
+                new L2515ShortestDistanceToTargetStringInACircularArray()
+                        .closetTarget(words, target, startIndex);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
 }
