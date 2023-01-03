@@ -1620,6 +1620,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2460ApplyOperationsToAnArray() {
+        int[] nums = {1, 2, 2, 1, 1, 0};
+        int[] res = new L2460ApplyOperationsToAnArray().applyOperations(nums);
+        int[] expected = {1, 4, 2, 0, 0, 0};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2515ShortestDistanceToTargetStringInACircularArray() {
         String[] words = {"hello", "i", "am", "leetcode", "hello"};
         String target = "hello";
