@@ -1620,6 +1620,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2446DetermineIfTwoEventsHaveConflict() {
+        String[] event1 = {"01:15", "02:00"};
+        String[] event2 = {"02:00", "03:00"};
+        boolean res = new L2446DetermineIfTwoEventsHaveConflict().haveConflict(event1, event2);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2460ApplyOperationsToAnArray() {
         int[] nums = {1, 2, 2, 1, 1, 0};
         int[] res = new L2460ApplyOperationsToAnArray().applyOperations(nums);
