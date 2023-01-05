@@ -1629,6 +1629,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2455AverageValueOfEvenNumbersThatAreDivisibleByThree() {
+        int[] nums = {1, 3, 6, 10, 12, 15};
+        int res = new L2455AverageValueOfEvenNumbersThatAreDivisibleByThree().averageValue(nums);
+        int expected = 9;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2460ApplyOperationsToAnArray() {
         int[] nums = {1, 2, 2, 1, 1, 0};
         int[] res = new L2460ApplyOperationsToAnArray().applyOperations(nums);
