@@ -1645,6 +1645,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2465NumberOfDistinctAverages() {
+        int[] nums = {4, 1, 4, 0, 3, 5};
+        int res = new L2465NumberOfDistinctAverages().distinctAverages(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2515ShortestDistanceToTargetStringInACircularArray() {
         String[] words = {"hello", "i", "am", "leetcode", "hello"};
         String target = "hello";
