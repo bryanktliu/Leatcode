@@ -1653,6 +1653,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2496MaximumValueOfAStringInAnArray() {
+        String[] strs = {"alic3", "bob", "3", "4", "00000"};
+        int res = new L2496MaximumValueOfAStringInAnArray().maximumValue(strs);
+        int expected = 5;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2515ShortestDistanceToTargetStringInACircularArray() {
         String[] words = {"hello", "i", "am", "leetcode", "hello"};
         String target = "hello";
