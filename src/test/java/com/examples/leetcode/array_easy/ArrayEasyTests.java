@@ -1661,6 +1661,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2500DeleteGreatestValueInEachRow() {
+        int[][] grid = {{1, 2, 4}, {3, 3, 1}};
+        int res = new L2500DeleteGreatestValueInEachRow().deleteGreatestValue(grid);
+        int expected = 8;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2515ShortestDistanceToTargetStringInACircularArray() {
         String[] words = {"hello", "i", "am", "leetcode", "hello"};
         String target = "hello";
