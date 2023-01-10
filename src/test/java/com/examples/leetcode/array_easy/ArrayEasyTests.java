@@ -1687,4 +1687,12 @@ public class ArrayEasyTests {
         int expected = 1;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2529MaximumCountOfPositiveIntegerAndNegativeInteger() {
+        int[] nums = {-2, -1, -1, 1, 2, 3};
+        int res = new L2529MaximumCountOfPositiveIntegerAndNegativeInteger().maximumCount(nums);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
 }
