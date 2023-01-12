@@ -33,6 +33,14 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL31NextPermutation() {
+        int[] nums = {1, 2, 3};
+        new L31NextPermutation().nextPermutation(nums);
+        int[] expected = {1, 3, 2};
+        Assert.assertEquals(nums, expected);
+    }
+
+    @Test
     public void testL33SearchInRotatedSortedArray() {
         int[] nums = {4, 5, 6, 7, 0, 1, 2};
         int target = 3;
