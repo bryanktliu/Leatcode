@@ -1,9 +1,10 @@
 package com.examples.leetcode.array_medium;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayMediumTests {
 
@@ -46,6 +47,21 @@ public class ArrayMediumTests {
         int target = 3;
         int res = new L33SearchInRotatedSortedArray().search(nums, target);
         int expected = -1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL46Permutations() {
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> list = new L46Permutations().permute(nums);
+        int[][] res = new int[list.size()][nums.length];
+        for (int i = 0; i < list.size(); ++i) {
+            List<Integer> temp = list.get(i);
+            for (int j = 0; j < nums.length; ++j) {
+                res[i][j] = temp.get(j);
+            }
+        }
+        int[][] expected = {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}};
         Assert.assertEquals(res, expected);
     }
 
