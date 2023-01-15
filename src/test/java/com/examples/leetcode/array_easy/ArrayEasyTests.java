@@ -1620,6 +1620,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2441LargestPositiveIntegerThatExistsWithItsNegative() {
+        int[] nums = {-1, 2, -3, 3};
+        int res = new L2441LargestPositiveIntegerThatExistsWithItsNegative().findMaxK(nums);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2446DetermineIfTwoEventsHaveConflict() {
         String[] event1 = {"01:15", "02:00"};
         String[] event2 = {"02:00", "03:00"};
