@@ -1203,6 +1203,17 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1984MinimumDifferenceBetweenHighestAndLowestOfKScores() {
+        int[] nums = {90};
+        int k = 1;
+        int res =
+                new L1984MinimumDifferenceBetweenHighestAndLowestOfKScores()
+                        .minimumDifference(nums, k);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1991FindTheMiddleIndexInArray() {
         int[] nums = {1, -1, 4};
         int res = new L1991FindTheMiddleIndexInArray().findMiddleIndex(nums);
