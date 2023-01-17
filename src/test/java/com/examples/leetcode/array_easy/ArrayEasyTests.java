@@ -1093,6 +1093,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1800MaximumAscendingSubarraySum() {
+        int[] nums = {10, 20, 30, 5, 10, 50};
+        int res = new L1800MaximumAscendingSubarraySum().maxAscendingSum(nums);
+        int expected = 65;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1816TruncateSentence() {
         String s = "What is the solution to this problem";
         int k = 4;
