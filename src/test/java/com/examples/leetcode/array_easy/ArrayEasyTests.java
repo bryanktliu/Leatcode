@@ -1006,6 +1006,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1684CountTheNumberOfConsistentStrings() {
+        String allowed = "ab";
+        String[] words = {"ad", "bd", "aaab", "baa", "badab"};
+        int res =
+                new L1684CountTheNumberOfConsistentStrings().countConsistentStrings(allowed, words);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1700NumberOfStudentsUnableToEatLunch() {
         int[] students = {1, 1, 1, 0, 0, 1};
         int[] sandwiches = {1, 0, 0, 0, 1, 1};
