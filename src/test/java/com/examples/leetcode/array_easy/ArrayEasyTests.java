@@ -178,6 +178,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL496NextGreaterElementI() {
+        int[] nums1 = {4, 1, 2};
+        int[] nums2 = {1, 3, 4, 2};
+        int[] res = new L496NextGreaterElementI().nextGreaterElement(nums1, nums2);
+        int[] expected = {-1, 3, -1};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL506RelativeRanks() {
         int[] score = {10, 3, 8, 9, 4};
         String[] res = new L506RelativeRanks().findRelativeRanks(score);
