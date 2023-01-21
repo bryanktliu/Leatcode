@@ -257,4 +257,13 @@ public class HashtableEasyTests {
         int res = new L997FindTheTownJudge().findJudge(n, trust);
         Assert.assertEquals(res, 2);
     }
+
+    @Test
+    public void testL1935MaximumNumberOfWordsYouCanType() {
+        String text = "hello world";
+        String brokenLetters = "ad";
+        int res = new L1935MaximumNumberOfWordsYouCanType().canBeTypedWords(text, brokenLetters);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
 }
