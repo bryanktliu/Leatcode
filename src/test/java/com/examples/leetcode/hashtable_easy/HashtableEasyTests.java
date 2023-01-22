@@ -259,6 +259,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1189MaximumNumberOfBalloons() {
+        String text = "nlaebolko";
+        int res = new L1189MaximumNumberOfBalloons().maxNumberOfBalloons(text);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
