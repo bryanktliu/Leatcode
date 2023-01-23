@@ -267,6 +267,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1370IncreasingDecreasingString() {
+        String s = "rat";
+        String res = new L1370IncreasingDecreasingString().sortString(s);
+        String expected = "art";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
