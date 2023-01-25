@@ -1,5 +1,6 @@
 package com.examples.leetcode.hashtable_easy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -271,6 +272,17 @@ public class HashtableEasyTests {
         String s = "rat";
         String res = new L1370IncreasingDecreasingString().sortString(s);
         String expected = "art";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL1436DestinationCity() {
+        List<List<String>> paths = new ArrayList<>();
+        paths.add(Arrays.asList("London", "New York"));
+        paths.add(Arrays.asList("New York", "Lima"));
+        paths.add(Arrays.asList("Lima", "Sao Paulo"));
+        String res = new L1436DestinationCity().destCity(paths);
+        String expected = "Sao Paulo";
         Assert.assertEquals(res, expected);
     }
 
