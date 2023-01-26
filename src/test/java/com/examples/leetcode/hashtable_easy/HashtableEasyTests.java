@@ -287,6 +287,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1496PathCrossing() {
+        String path = "NES";
+        boolean res = new L1496PathCrossing().isPathCrossing(path);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
