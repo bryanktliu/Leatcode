@@ -295,6 +295,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1763LongestNiceSubstring() {
+        String s = "YazaAay";
+        String res = new L1763LongestNiceSubstring().longestNiceSubstring(s);
+        String expected = "aAa";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
