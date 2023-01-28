@@ -303,6 +303,15 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1790CheckIfOneStringSwapCanMakeStringsEqual() {
+        String s1 = "bank";
+        String s2 = "kanb";
+        boolean res = new L1790CheckIfOneStringSwapCanMakeStringsEqual().areAlmostEqual(s1, s2);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
