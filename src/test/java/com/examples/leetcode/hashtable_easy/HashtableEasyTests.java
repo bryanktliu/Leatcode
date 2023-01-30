@@ -312,6 +312,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1796SecondLargestDigitInAString() {
+        String s = "dfa12321afd";
+        int res = new L1796SecondLargestDigitInAString().secondHighest(s);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
