@@ -327,4 +327,12 @@ public class HashtableEasyTests {
         int expected = 1;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2103RingsAndRods() {
+        String rings = "B0B6G0R6R0R6G9";
+        int res = new L2103RingsAndRods().countPoints(rings);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
 }
