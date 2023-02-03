@@ -320,6 +320,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1832CheckIfTheSentenceIsPangram() {
+        String sentence = "thequickbrownfoxjumpsoverthelazydog";
+        boolean res = new L1832CheckIfTheSentenceIsPangram().checkIfPangram(sentence);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
