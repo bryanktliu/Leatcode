@@ -320,6 +320,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1805NumberOfDifferentIntegersInAString() {
+        String word = "a123bc34d8ef34";
+        int res = new L1805NumberOfDifferentIntegersInAString().numDifferentIntegers(word);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1832CheckIfTheSentenceIsPangram() {
         String sentence = "thequickbrownfoxjumpsoverthelazydog";
         boolean res = new L1832CheckIfTheSentenceIsPangram().checkIfPangram(sentence);
