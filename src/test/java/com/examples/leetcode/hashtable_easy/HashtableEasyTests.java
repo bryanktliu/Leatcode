@@ -345,6 +345,15 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1941CheckIfAllCharactersHaveEqualNumberOfOccurrences() {
+        String s = "abacbc";
+        boolean res =
+                new L1941CheckIfAllCharactersHaveEqualNumberOfOccurrences().areOccurrencesEqual(s);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2103RingsAndRods() {
         String rings = "B0B6G0R6R0R6G9";
         int res = new L2103RingsAndRods().countPoints(rings);
