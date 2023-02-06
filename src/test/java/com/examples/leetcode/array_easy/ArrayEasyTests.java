@@ -1741,4 +1741,13 @@ public class ArrayEasyTests {
         int expected = 3;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2540MinimumCommonValue() {
+        int[] nums1 = {1, 2, 3};
+        int[] nums2 = {2, 4};
+        int res = new L2540MinimumCommonValue().getCommon(nums1, nums2);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
 }
