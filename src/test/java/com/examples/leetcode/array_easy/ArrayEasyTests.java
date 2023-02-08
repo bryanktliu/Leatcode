@@ -1750,4 +1750,13 @@ public class ArrayEasyTests {
         int expected = 2;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2558TakeGiftsFromTheRichestPile() {
+        int[] gifts = {25, 64, 9, 4, 100};
+        int k = 4;
+        long res = new L2558TakeGiftsFromTheRichestPile().pickGifts(gifts, k);
+        long expected = 29;
+        Assert.assertEquals(res, expected);
+    }
 }
