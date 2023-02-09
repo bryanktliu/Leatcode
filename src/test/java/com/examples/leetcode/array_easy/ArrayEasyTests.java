@@ -1752,6 +1752,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2553SeparateTheDigitsInAnArray() {
+        int[] nums = {13, 25, 83, 77};
+        int[] res = new L2553SeparateTheDigitsInAnArray().separateDigits(nums);
+        int[] expected = {1, 3, 2, 5, 8, 3, 7, 7};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2558TakeGiftsFromTheRichestPile() {
         int[] gifts = {25, 64, 9, 4, 100};
         int k = 4;
