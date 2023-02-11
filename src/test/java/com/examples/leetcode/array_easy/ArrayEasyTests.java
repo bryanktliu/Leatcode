@@ -1752,6 +1752,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2549CountDistinctNumbersOnBoard() {
+        int n = 5;
+        int res = new L2549CountDistinctNumbersOnBoard().distinctIntegers(n);
+        int expected = 4;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2553SeparateTheDigitsInAnArray() {
         int[] nums = {13, 25, 83, 77};
         int[] res = new L2553SeparateTheDigitsInAnArray().separateDigits(nums);
