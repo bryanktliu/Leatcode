@@ -1743,6 +1743,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2535DifferenceBetweenElementSumAndDigitSumOfAnArray() {
+        int[] nums = {1, 15, 6, 3};
+        int res = new L2535DifferenceBetweenElementSumAndDigitSumOfAnArray().differenceOfSum(nums);
+        int expected = 9;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2540MinimumCommonValue() {
         int[] nums1 = {1, 2, 3};
         int[] nums2 = {2, 4};
