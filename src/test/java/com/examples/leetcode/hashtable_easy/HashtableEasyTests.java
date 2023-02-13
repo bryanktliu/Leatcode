@@ -295,6 +295,16 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1624LargestSubstringBetweenTwoEqualCharacters() {
+        String s = "aa";
+        int res =
+                new L1624LargestSubstringBetweenTwoEqualCharacters()
+                        .maxLengthBetweenEqualCharacters(s);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1763LongestNiceSubstring() {
         String s = "YazaAay";
         String res = new L1763LongestNiceSubstring().longestNiceSubstring(s);
