@@ -1783,4 +1783,12 @@ public class ArrayEasyTests {
         long expected = 29;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2562FindTheArrayConcatenationValue() {
+        int[] nums = {7, 52, 2, 4};
+        long res = new L2562FindTheArrayConcatenationValue().findTheArrayConcVal(nums);
+        long expected = 596;
+        Assert.assertEquals(res, expected);
+    }
 }
