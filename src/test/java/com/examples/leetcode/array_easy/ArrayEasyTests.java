@@ -1715,6 +1715,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2506CountPairsOfSimilarStrings() {
+        String[] words = {"aba", "aabb", "abcd", "bac", "aabc"};
+        int res = new L2506CountPairsOfSimilarStrings().similarPairs(words);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2511MaximumEnemyFortsThatCanBeCaptured() {
         int[] forts = {1, 0, 0, -1, 0, 0, 0, 0, 1};
         int res = new L2511MaximumEnemyFortsThatCanBeCaptured().captureForts(forts);
