@@ -346,6 +346,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1876SubstringsOfSizeThreeWithDistinctCharacters() {
+        String s = "xyzzaz";
+        int res = new L1876SubstringsOfSizeThreeWithDistinctCharacters().countGoodSubstrings(s);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";
