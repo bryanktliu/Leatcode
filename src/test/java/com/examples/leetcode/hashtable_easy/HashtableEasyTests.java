@@ -354,6 +354,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL1897RedistributeCharactersToMakeAllStringsEqual() {
+        String[] words = {"abc", "aabc", "bc"};
+        boolean res = new L1897RedistributeCharactersToMakeAllStringsEqual().makeEqual(words);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1935MaximumNumberOfWordsYouCanType() {
         String text = "hello world";
         String brokenLetters = "ad";

@@ -7,7 +7,9 @@ public class L1876SubstringsOfSizeThreeWithDistinctCharacters {
         char[] chars = s.toCharArray();
         int count = 0;
         for (int i = 2; i < chars.length; ++i) {
-            if (chars[i] != chars[i - 1] && chars[i] != chars[i - 2] && chars[i - 1] != chars[i - 2]) {
+            if (chars[i] != chars[i - 1]
+                    && chars[i] != chars[i - 2]
+                    && chars[i - 1] != chars[i - 2]) {
                 ++count;
             }
         }
