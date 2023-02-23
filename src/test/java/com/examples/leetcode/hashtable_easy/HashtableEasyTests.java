@@ -380,6 +380,17 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL2068CheckWhetherTwoStringsAreAlmostEquivalent() {
+        String word1 = "aaaa";
+        String word2 = "bccb";
+        boolean res =
+                new L2068CheckWhetherTwoStringsAreAlmostEquivalent()
+                        .checkAlmostEquivalent(word1, word2);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2103RingsAndRods() {
         String rings = "B0B6G0R6R0R6G9";
         int res = new L2103RingsAndRods().countPoints(rings);
