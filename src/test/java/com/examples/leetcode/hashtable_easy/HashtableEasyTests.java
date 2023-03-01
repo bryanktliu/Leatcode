@@ -413,4 +413,13 @@ public class HashtableEasyTests {
         String expected = "E";
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2325DecodeTheMessage() {
+        String key = "the quick brown fox jumps over the lazy dog";
+        String message = "vkbs bs t suepuv";
+        String res = new L2325DecodeTheMessage().decodeMessage(key, message);
+        String expected = "this is a secret";
+        Assert.assertEquals(res, expected);
+    }
 }
