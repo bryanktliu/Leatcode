@@ -1,11 +1,12 @@
 package com.examples.leetcode.hashtable_easy;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class HashtableEasyTests {
 
