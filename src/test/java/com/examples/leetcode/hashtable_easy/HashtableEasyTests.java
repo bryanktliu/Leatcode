@@ -1,12 +1,11 @@
 package com.examples.leetcode.hashtable_easy;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class HashtableEasyTests {
 
@@ -421,6 +420,14 @@ public class HashtableEasyTests {
         String message = "vkbs bs t suepuv";
         String res = new L2325DecodeTheMessage().decodeMessage(key, message);
         String expected = "this is a secret";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2351FirstLetterToAppearTwice() {
+        String s = "abccbaacz";
+        char res = new L2351FirstLetterToAppearTwice().repeatedCharacter(s);
+        char expected = 'c';
         Assert.assertEquals(res, expected);
     }
 }
