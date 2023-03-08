@@ -1799,4 +1799,12 @@ public class ArrayEasyTests {
         long expected = 596;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2574LeftAndRightSumDifferences() {
+        int[] nums = {10, 4, 8, 3};
+        int[] res = new L2574LeftAndRightSumDifferences().leftRigthDifference(nums);
+        int[] expected = {15, 1, 11, 22};
+        Assert.assertEquals(res, expected);
+    }
 }
