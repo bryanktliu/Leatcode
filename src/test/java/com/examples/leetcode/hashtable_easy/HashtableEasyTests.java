@@ -430,4 +430,12 @@ public class HashtableEasyTests {
         char expected = 'c';
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2423RemoveLetterToEqualizeFrequency() {
+        String word = "abcc";
+        boolean res = new L2423RemoveLetterToEqualizeFrequency().equalFrequency(word);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
 }
