@@ -448,4 +448,12 @@ public class HashtableEasyTests {
         boolean expected = true;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2451OddStringDifference() {
+        String[] words = {"adc","wzy","abc"};
+        String res = new L2451OddStringDifference().oddString(words);
+        String expected = "abc";
+        Assert.assertEquals(res, expected);
+    }
 }
