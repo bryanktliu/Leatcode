@@ -1,11 +1,12 @@
 package com.examples.leetcode.hashtable_easy;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class HashtableEasyTests {
 
@@ -403,6 +404,15 @@ public class HashtableEasyTests {
         String num = "1210";
         boolean res = new L2283CheckIfNumberHasEqualDigitCountAndDigitValue().digitCount(num);
         boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2287RearrangeCharactersToMakeTargetString() {
+        String s = "ilovecodingonleetcode";
+        String target = "code";
+        int res = new L2287RearrangeCharactersToMakeTargetString().rearrangeCharacters(s, target);
+        int expected = 2;
         Assert.assertEquals(res, expected);
     }
 
