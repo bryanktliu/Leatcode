@@ -65,6 +65,22 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL78Subsets() {
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> list = new L78Subsets().subsets(nums);
+        int[][] res = new int[list.size()][];
+        for (int i = 0; i < list.size(); ++i) {
+            List<Integer> temp = list.get(i);
+            res[i] = new int[temp.size()];
+            for (int j = 0; j < temp.size(); ++j) {
+                res[i][j] = temp.get(j);
+            }
+        }
+        int[][] expected = {{1, 2, 3}, {1, 2}, {1, 3}, {1}, {2, 3}, {2}, {3}, {}};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL220ContainsDuplicateIII() {
         int[] nums = {1, 5, 9, 1, 5, 9};
         int k = 2;

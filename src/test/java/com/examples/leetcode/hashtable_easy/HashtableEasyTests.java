@@ -1,12 +1,11 @@
 package com.examples.leetcode.hashtable_easy;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class HashtableEasyTests {
 
@@ -451,7 +450,7 @@ public class HashtableEasyTests {
 
     @Test
     public void testL2451OddStringDifference() {
-        String[] words = {"adc","wzy","abc"};
+        String[] words = {"adc", "wzy", "abc"};
         String res = new L2451OddStringDifference().oddString(words);
         String expected = "abc";
         Assert.assertEquals(res, expected);
