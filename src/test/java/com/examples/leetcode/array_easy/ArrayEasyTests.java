@@ -1807,4 +1807,14 @@ public class ArrayEasyTests {
         int[] expected = {15, 1, 11, 22};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2586CountTheNumberOfVowelStringsInRange() {
+        String[] words = {"are", "amy", "u"};
+        int left = 0;
+        int right = 2;
+        int res = new L2586CountTheNumberOfVowelStringsInRange().vowelStrings(words, left, right);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
 }
