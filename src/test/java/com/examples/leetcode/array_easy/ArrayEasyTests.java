@@ -1801,6 +1801,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2570MergeTwo2DArraysBySummingValues() {
+        int[][] nums1 = {{1, 2}, {2, 3}, {4, 5}};
+        int[][] nums2 = {{1, 4}, {3, 2}, {4, 1}};
+        int[][] res = new L2570MergeTwo2DArraysBySummingValues().mergeArrays(nums1, nums2);
+        int[][] expected = {{1, 6}, {2, 3}, {3, 2}, {4, 6}};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2574LeftAndRightSumDifferences() {
         int[] nums = {10, 4, 8, 3};
         int[] res = new L2574LeftAndRightSumDifferences().leftRigthDifference(nums);
