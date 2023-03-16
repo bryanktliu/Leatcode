@@ -1230,6 +1230,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1979FindGreatestCommonDivisorOfArray() {
+        int[] nums = {2, 5, 6, 9, 10};
+        int res = new L1979FindGreatestCommonDivisorOfArray().findGCD(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1984MinimumDifferenceBetweenHighestAndLowestOfKScores() {
         int[] nums = {90};
         int k = 1;
