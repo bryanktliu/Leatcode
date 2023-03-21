@@ -1,9 +1,10 @@
 package com.examples.leetcode.array_medium;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayMediumTests {
 
@@ -61,6 +62,14 @@ public class ArrayMediumTests {
             }
         }
         int[][] expected = {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL55JumpGame() {
+        int[] nums = {2, 3, 1, 1, 4};
+        boolean res = new L55JumpGame().canJump(nums);
+        boolean expected = true;
         Assert.assertEquals(res, expected);
     }
 
