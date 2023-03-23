@@ -1,10 +1,11 @@
 package com.examples.leetcode.array_easy;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ArrayEasyTests {
 
@@ -1595,6 +1596,14 @@ public class ArrayEasyTests {
         int diff = 2;
         int res = new L2367NumberOfArithmeticTriplets().arithmeticTriplets(nums, diff);
         int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2373LargestLocalValuesInAMatrix() {
+        int[][] grid = {{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}};
+        int[][] res = new L2373LargestLocalValuesInAMatrix().largestLocal(grid);
+        int[][] expected = {{9, 9}, {8, 6}};
         Assert.assertEquals(res, expected);
     }
 
