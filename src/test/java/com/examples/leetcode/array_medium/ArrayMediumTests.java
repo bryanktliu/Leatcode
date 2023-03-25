@@ -1,9 +1,11 @@
 package com.examples.leetcode.array_medium;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ArrayMediumTests {
 
@@ -94,6 +96,15 @@ public class ArrayMediumTests {
             }
         }
         int[][] expected = {{1, 2, 3}, {1, 2}, {1, 3}, {1}, {2, 3}, {2}, {3}, {}};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL80RemoveDuplicatesFromSortedArrayII() {
+        int[] nums = {1,1,1,2,2,3};
+        int len = new L80RemoveDuplicatesFromSortedArrayII().removeDuplicates(nums);
+        int[] res = Arrays.copyOf(nums, len);
+        int[] expected = {1,1,2,2,3};
         Assert.assertEquals(res, expected);
     }
 

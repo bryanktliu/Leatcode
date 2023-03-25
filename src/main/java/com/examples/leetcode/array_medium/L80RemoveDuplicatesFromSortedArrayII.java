@@ -13,13 +13,12 @@ public class L80RemoveDuplicatesFromSortedArrayII {
                     continue;
                 }
                 second = true;
-                ++index;
             } else {
                 second = false;
                 last = nums[i];
-                nums[index] = nums[i];
-                ++index;
             }
+            nums[index] = nums[i];
+            ++index;
         }
         return index;
     }
