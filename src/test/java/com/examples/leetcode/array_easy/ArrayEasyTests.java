@@ -1843,4 +1843,14 @@ public class ArrayEasyTests {
         int expected = 2;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2605FormSmallestNumberFromTwoDigitArrays() {
+        int[] nums1 = {4,1,3};
+        int[] nums2 = {5,7};
+        int res = new L2605FormSmallestNumberFromTwoDigitArrays().minNumber(nums1, nums2);
+        int expected = 15;
+        Assert.assertEquals(res, expected);
+    }
+
 }
