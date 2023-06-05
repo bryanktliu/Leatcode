@@ -1853,4 +1853,11 @@ public class ArrayEasyTests {
         Assert.assertEquals(res, expected);
     }
 
+    @Test
+    public void testL2639FindTheWidthOfColumnsOfAGrid() {
+        int[][] grid = {{1}, {22}, {333}};
+        int[] res = new L2639FindTheWidthOfColumnsOfAGrid().findColumnWidth(grid);
+        int[] expected = {3};
+        Assert.assertEquals(res, expected);
+    }
 }
