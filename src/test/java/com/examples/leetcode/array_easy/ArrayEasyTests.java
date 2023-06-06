@@ -1860,4 +1860,12 @@ public class ArrayEasyTests {
         int[] expected = {3};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2652SumMultiples() {
+        int n = 7;
+        int res = new L2652SumMultiples().sumOfMultiples(n);
+        int expected = 21;
+        Assert.assertEquals(res, expected);
+    }
 }

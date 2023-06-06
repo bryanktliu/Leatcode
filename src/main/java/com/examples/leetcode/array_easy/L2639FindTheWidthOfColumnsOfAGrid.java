@@ -6,7 +6,9 @@ public class L2639FindTheWidthOfColumnsOfAGrid {
     public int[] findColumnWidth(int[][] grid) {
         int[] maxes = new int[grid[0].length];
         for (int i = 0; i < grid[0].length; ++i) {
-            maxes[i] = Math.max(getWidth(maxes[i]), maxes[i]);
+            for (int[] col : grid) {
+                maxes[i] = Math.max(getWidth(col[i]), maxes[i]);
+            }
         }
         return maxes;
     }
