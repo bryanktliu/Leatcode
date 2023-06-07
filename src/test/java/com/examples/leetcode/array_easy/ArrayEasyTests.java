@@ -1,11 +1,10 @@
 package com.examples.leetcode.array_easy;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class ArrayEasyTests {
 
@@ -1846,8 +1845,8 @@ public class ArrayEasyTests {
 
     @Test
     public void testL2605FormSmallestNumberFromTwoDigitArrays() {
-        int[] nums1 = {4,1,3};
-        int[] nums2 = {5,7};
+        int[] nums1 = {4, 1, 3};
+        int[] nums2 = {5, 7};
         int res = new L2605FormSmallestNumberFromTwoDigitArrays().minNumber(nums1, nums2);
         int expected = 15;
         Assert.assertEquals(res, expected);
@@ -1866,6 +1865,14 @@ public class ArrayEasyTests {
         int n = 7;
         int res = new L2652SumMultiples().sumOfMultiples(n);
         int expected = 21;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2678NumberOfSeniorCitizens() {
+        String[] details = {"7868190130M7522", "5303914400F9211", "9273338290F4010"};
+        int res = new L2678NumberOfSeniorCitizens().countSeniors(details);
+        int expected = 4;
         Assert.assertEquals(res, expected);
     }
 }

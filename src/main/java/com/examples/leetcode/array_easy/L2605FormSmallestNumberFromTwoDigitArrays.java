@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/
- */
+/** https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/ */
 public class L2605FormSmallestNumberFromTwoDigitArrays {
 
     public int minNumber(int[] nums1, int[] nums2) {
