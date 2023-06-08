@@ -1869,6 +1869,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2656MaximumSumWithExactlyKElements() {
+        int[] nums = {1, 2, 3, 4, 5};
+        int k = 3;
+        int res = new L2656MaximumSumWithExactlyKElements().maximizeSum(nums, k);
+        int expected = 18;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2678NumberOfSeniorCitizens() {
         String[] details = {"7868190130M7522", "5303914400F9211", "9273338290F4010"};
         int res = new L2678NumberOfSeniorCitizens().countSeniors(details);
