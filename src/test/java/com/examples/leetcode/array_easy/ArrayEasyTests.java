@@ -1861,6 +1861,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2643RowWithMaximumOnes() {
+        int[][] mat = {{0, 1}, {1, 0}};
+        int[] res = new L2643RowWithMaximumOnes().rowAndMaximumOnes(mat);
+        int[] expected = {0, 1};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2652SumMultiples() {
         int n = 7;
         int res = new L2652SumMultiples().sumOfMultiples(n);
