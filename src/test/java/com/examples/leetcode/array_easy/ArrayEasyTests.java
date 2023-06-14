@@ -1886,6 +1886,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2660DetermineTheWinnerOfABowlingGame() {
+        int[] player1 = {4, 10, 7, 9};
+        int[] player2 = {6, 5, 2, 3};
+        int res = new L2660DetermineTheWinnerOfABowlingGame().isWinner(player1, player2);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2678NumberOfSeniorCitizens() {
         String[] details = {"7868190130M7522", "5303914400F9211", "9273338290F4010"};
         int res = new L2678NumberOfSeniorCitizens().countSeniors(details);
