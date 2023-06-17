@@ -1869,6 +1869,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2644FindTheMaximumDivisibilityScore() {
+        int[] nums = {4, 7, 9, 3, 9};
+        int[] divisors = {5, 2, 3};
+        int res = new L2644FindTheMaximumDivisibilityScore().maxDivScore(nums, divisors);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2652SumMultiples() {
         int n = 7;
         int res = new L2652SumMultiples().sumOfMultiples(n);
