@@ -1,10 +1,11 @@
 package com.examples.leetcode.array_easy;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ArrayEasyTests {
 
@@ -1900,6 +1901,14 @@ public class ArrayEasyTests {
         int[] player2 = {6, 5, 2, 3};
         int res = new L2660DetermineTheWinnerOfABowlingGame().isWinner(player1, player2);
         int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2670FindTheDistinctDifferenceArray() {
+        int[] nums = {1,2,3,4,5};
+        int[] res = new L2670FindTheDistinctDifferenceArray().distinctDifferenceArray(nums);
+        int[] expected = {-3,-1,1,3,5};
         Assert.assertEquals(res, expected);
     }
 
