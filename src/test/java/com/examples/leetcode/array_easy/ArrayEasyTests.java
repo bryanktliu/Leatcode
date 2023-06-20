@@ -1919,4 +1919,13 @@ public class ArrayEasyTests {
         int expected = 4;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2682FindTheLosersOfTheCircularGame() {
+        int n = 5;
+        int k = 2;
+        int[] res = new L2682FindTheLosersOfTheCircularGame().circularGameLosers(n, k);
+        int[] expected = {4, 5};
+        Assert.assertEquals(res, expected);
+    }
 }
