@@ -1928,4 +1928,13 @@ public class ArrayEasyTests {
         int[] expected = {4, 5};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2706BuyTwoChocolates() {
+        int[] prices = {1,2,2};
+        int money = 3;
+        int res = new L2706BuyTwoChocolates().buyChoco(prices, money);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
 }
