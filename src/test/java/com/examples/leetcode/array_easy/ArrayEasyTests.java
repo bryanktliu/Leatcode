@@ -1937,4 +1937,12 @@ public class ArrayEasyTests {
         int expected = 0;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2778SumOfSquaresOfSpecialElements() {
+        int[] nums = {1,2,3,4};
+        int res = new L2778SumOfSquaresOfSpecialElements().sumOfSquares(nums);
+        int expected = 21;
+        Assert.assertEquals(res, expected);
+    }
 }
