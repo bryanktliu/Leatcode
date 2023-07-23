@@ -1,11 +1,10 @@
 package com.examples.leetcode.array_easy;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class ArrayEasyTests {
 
@@ -1906,9 +1905,9 @@ public class ArrayEasyTests {
 
     @Test
     public void testL2670FindTheDistinctDifferenceArray() {
-        int[] nums = {1,2,3,4,5};
+        int[] nums = {1, 2, 3, 4, 5};
         int[] res = new L2670FindTheDistinctDifferenceArray().distinctDifferenceArray(nums);
-        int[] expected = {-3,-1,1,3,5};
+        int[] expected = {-3, -1, 1, 3, 5};
         Assert.assertEquals(res, expected);
     }
 
@@ -1931,7 +1930,7 @@ public class ArrayEasyTests {
 
     @Test
     public void testL2706BuyTwoChocolates() {
-        int[] prices = {1,2,2};
+        int[] prices = {1, 2, 2};
         int money = 3;
         int res = new L2706BuyTwoChocolates().buyChoco(prices, money);
         int expected = 0;
@@ -1939,8 +1938,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2744FindMaximumNumberOfStringPairs() {
+        String[] words = {"cd", "ac", "dc", "ca", "zz"};
+        int res = new L2744FindMaximumNumberOfStringPairs().maximumNumberOfStringPairs(words);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2778SumOfSquaresOfSpecialElements() {
-        int[] nums = {1,2,3,4};
+        int[] nums = {1, 2, 3, 4};
         int res = new L2778SumOfSquaresOfSpecialElements().sumOfSquares(nums);
         int expected = 21;
         Assert.assertEquals(res, expected);

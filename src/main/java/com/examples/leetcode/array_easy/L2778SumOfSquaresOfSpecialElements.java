@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/sum-of-squares-of-special-elements/
- */
+/** https://leetcode.com/problems/sum-of-squares-of-special-elements/ */
 public class L2778SumOfSquaresOfSpecialElements {
 
     public int sumOfSquares(int[] nums) {
