@@ -1938,6 +1938,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2733NeitherMinimumNorMaximum() {
+        int[] nums = {3, 2, 1, 4};
+        int res = new L2733NeitherMinimumNorMaximum().findNonMinOrMax(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2744FindMaximumNumberOfStringPairs() {
         String[] words = {"cd", "ac", "dc", "ca", "zz"};
         int res = new L2744FindMaximumNumberOfStringPairs().maximumNumberOfStringPairs(words);
