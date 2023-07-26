@@ -1960,4 +1960,14 @@ public class ArrayEasyTests {
         int expected = 21;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2788SplitStringsBySeparator() {
+        List<String> words = {"one.two.three", "four.five", "six"};
+        char separator = '.';
+        List<String> res =
+                new L2788SplitStringsBySeparator().splitWordsBySeparator(words, separator);
+        List<String> expected = Arrays.asList("one", "two", "three", "four", "five", "six");
+        Assert.assertEquals(res, expected);
+    }
 }
