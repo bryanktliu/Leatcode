@@ -1962,8 +1962,16 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2784CheckIfArrayIsGood() {
+        int[] nums = {2, 1, 3};
+        boolean res = new L2784CheckIfArrayIsGood().isGood(nums);
+        boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2788SplitStringsBySeparator() {
-        List<String> words = {"one.two.three", "four.five", "six"};
+        List<String> words = Arrays.asList("one.two.three", "four.five", "six");
         char separator = '.';
         List<String> res =
                 new L2788SplitStringsBySeparator().splitWordsBySeparator(words, separator);
