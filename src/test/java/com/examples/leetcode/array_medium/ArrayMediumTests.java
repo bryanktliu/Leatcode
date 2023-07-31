@@ -1,10 +1,11 @@
 package com.examples.leetcode.array_medium;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ArrayMediumTests {
 
@@ -70,6 +71,14 @@ public class ArrayMediumTests {
         int[] nums = {2, 3, 1, 1, 4};
         boolean res = new L55JumpGame().canJump(nums);
         boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL64MinimumPathSum() {
+        int[][] grid = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
+        int res = new L64MinimumPathSum().minPathSum(grid);
+        int expected = 7;
         Assert.assertEquals(res, expected);
     }
 
