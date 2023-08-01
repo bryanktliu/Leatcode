@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayMediumTests {
@@ -113,6 +114,19 @@ public class ArrayMediumTests {
         int len = new L80RemoveDuplicatesFromSortedArrayII().removeDuplicates(nums);
         int[] res = Arrays.copyOf(nums, len);
         int[] expected = {1, 1, 2, 2, 3};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL120Triangle() {
+        List<List<Integer>> triangle =
+                Arrays.asList(
+                        Collections.singletonList(2),
+                        Arrays.asList(3, 4),
+                        Arrays.asList(6, 5, 7),
+                        Arrays.asList(4, 1, 8, 3));
+        int res = new L120Triangle().minimumTotal(triangle);
+        int expected = 11;
         Assert.assertEquals(res, expected);
     }
 
