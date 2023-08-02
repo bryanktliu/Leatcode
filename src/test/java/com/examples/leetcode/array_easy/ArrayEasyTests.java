@@ -1986,4 +1986,15 @@ public class ArrayEasyTests {
         List<String> expected = Arrays.asList("one", "two", "three", "four", "five", "six");
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2798NumberOfEmployeesWhoMetTheTarget() {
+        int[] hours = {0, 1, 2, 3, 4};
+        int target = 2;
+        int res =
+                new L2798NumberOfEmployeesWhoMetTheTarget()
+                        .numberOfEmployeesWhoMetTarget(hours, target);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
 }
