@@ -172,4 +172,12 @@ public class ArrayMediumTests {
         int expected = 1;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2740FindTheValueOfThePartition() {
+        int[] nums = {1, 3, 2, 4};
+        int res = new L2740FindTheValueOfThePartition().findValueOfPartition(nums);
+        int expected = 1;
+        Assert.assertEquals(res, expected);
+    }
 }
