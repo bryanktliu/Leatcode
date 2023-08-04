@@ -1,11 +1,12 @@
 package com.examples.leetcode.array_medium;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ArrayMediumTests {
 
@@ -136,6 +137,14 @@ public class ArrayMediumTests {
         int t = 3;
         boolean res = new L220ContainsDuplicateIII().containsNearbyAlmostDuplicate(nums, k, t);
         boolean expected = false;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL238ProductOfArrayExceptSelf() {
+        int[] nums = {1,2,3,4};
+        int[] res = new L238ProductOfArrayExceptSelf().productExceptSelf(nums);
+        int[] expected = {24, 12, 8, 6};
         Assert.assertEquals(res, expected);
     }
 
