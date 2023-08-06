@@ -1,11 +1,12 @@
 package com.examples.leetcode.array_medium;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class ArrayMediumTests {
 
@@ -135,6 +136,14 @@ public class ArrayMediumTests {
         List<String> wordDict = Arrays.asList("leet", "code");
         boolean res = new L139WordBreak().wordBreak(s, wordDict);
         boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL198HouseRobber() {
+        int[] nums = {1,2,3,1};
+        int res = new L198HouseRobber().rob(nums);
+        int expected = 4;
         Assert.assertEquals(res, expected);
     }
 
