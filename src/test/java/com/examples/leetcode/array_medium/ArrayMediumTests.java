@@ -141,7 +141,7 @@ public class ArrayMediumTests {
 
     @Test
     public void testL198HouseRobber() {
-        int[] nums = {1,2,3,1};
+        int[] nums = {1, 2, 3, 1};
         int res = new L198HouseRobber().rob(nums);
         int expected = 4;
         Assert.assertEquals(res, expected);
@@ -162,6 +162,14 @@ public class ArrayMediumTests {
         int[] nums = {1, 2, 3, 4};
         int[] res = new L238ProductOfArrayExceptSelf().productExceptSelf(nums);
         int[] expected = {24, 12, 8, 6};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL274HIndex() {
+        int[] citations = {3, 0, 6, 1, 5};
+        int res = new L274HIndex().hIndex(citations);
+        int expected = 3;
         Assert.assertEquals(res, expected);
     }
 
