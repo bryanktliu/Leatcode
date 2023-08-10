@@ -1042,6 +1042,15 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1720DecodeXORedArray() {
+        int[] encoded = {1, 2, 3};
+        int first = 1;
+        int[] res = new L1720DecodeXORedArray().decode(encoded, first);
+        int[] expected = {1, 0, 2, 1};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1725NumberOfRectanglesThatCanFormTheLargestSquare() {
         int[][] rectangles = {{2, 3}, {3, 7}, {4, 3}, {3, 7}};
         int res =
