@@ -1169,6 +1169,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1863SumOfAllSubsetXORTotals() {
+        int[] nums = {1, 3};
+        int res = new L1863SumOfAllSubsetXORTotals().subsetXORSum(nums);
+        int expected = 6;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1869LongerContiguousSegmentsOfOnesThanZeros() {
         String s = "111000";
         boolean res = new L1869LongerContiguousSegmentsOfOnesThanZeros().checkZeroOnes(s);
