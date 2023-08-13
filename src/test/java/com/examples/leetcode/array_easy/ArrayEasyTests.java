@@ -782,6 +782,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL1408StringMatchingInAnArray() {
+        String[] words = {"mass", "as", "hero", "superhero"};
+        List<String> res = new L1408StringMatchingInAnArray().stringMatching(words);
+        List<String> expected = Arrays.asList("as", "hero");
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL1413MinimumValueToGet() {
         int[] nums = {-3, 2, -3, 4, 2};
         int res = new L1413MinimumValueToGet().minStartValue(nums);
