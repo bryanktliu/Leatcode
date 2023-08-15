@@ -2022,4 +2022,12 @@ public class ArrayEasyTests {
         int expected = 3;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2815MaxPairSumInAnArray() {
+        int[] nums = {51, 71, 17, 24, 42};
+        int res = new L2815MaxPairSumInAnArray().maxSum(nums);
+        int expected = 88;
+        Assert.assertEquals(res, expected);
+    }
 }
