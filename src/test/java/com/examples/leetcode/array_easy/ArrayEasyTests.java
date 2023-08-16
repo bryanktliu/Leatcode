@@ -397,6 +397,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL883ProjectionAreaOf3DShapes() {
+        int[][] grid = {{1, 2}, {3, 4}};
+        int res = new L883ProjectionAreaOf3DShapes().projectionArea(grid);
+        int expected = 17;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL888FairCandySwap() {
         int[] arr1 = {1, 1};
         int[] arr2 = {2, 2};
