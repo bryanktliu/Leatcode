@@ -207,6 +207,19 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL2610ConvertAnArrayIntoA2DArrayWithConditions() {
+        int[] nums = {1, 3, 4, 1, 2, 3, 1};
+        List<List<Integer>> list =
+                new L2610ConvertAnArrayIntoA2DArrayWithConditions().findMatrix(nums);
+        int[][] res =
+                list.stream()
+                        .map(l -> l.stream().mapToInt(Integer::intValue).toArray())
+                        .toArray(int[][]::new);
+        int[][] expected = {{1, 2, 3, 4}, {1, 3}, {1}};
+        Assert.assertTrue(Arrays.deepEquals(res, expected));
+    }
+
+    @Test
     public void testL2740FindTheValueOfThePartition() {
         int[] nums = {1, 3, 2, 4};
         int res = new L2740FindTheValueOfThePartition().findValueOfPartition(nums);
