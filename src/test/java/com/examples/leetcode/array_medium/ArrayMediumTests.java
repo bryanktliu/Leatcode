@@ -182,10 +182,11 @@ public class ArrayMediumTests {
 
     @Test
     public void testL986IntervalListIntersections() {
-        int[][] firstList = {{0,2},{5,10},{13,23},{24,25}};
-        int[][] secondList = {{1,5},{8,12},{15,24},{25,26}};
-        int[][] res = new L986IntervalListIntersections().intervalIntersection(firstList, secondList);
-        int[][] expected = {{1,2},{5,5},{8,10},{15,23},{24,24},{25,25}};
+        int[][] firstList = {{0, 2}, {5, 10}, {13, 23}, {24, 25}};
+        int[][] secondList = {{1, 5}, {8, 12}, {15, 24}, {25, 26}};
+        int[][] res =
+                new L986IntervalListIntersections().intervalIntersection(firstList, secondList);
+        int[][] expected = {{1, 2}, {5, 5}, {8, 10}, {15, 23}, {24, 24}, {25, 25}};
         Assert.assertEquals(res, expected);
     }
 

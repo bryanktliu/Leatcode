@@ -1,7 +1,7 @@
-if (JavaVersion.current() < JavaVersion.VERSION_11) {
+if (JavaVersion.current() < JavaVersion.VERSION_19) {
     apply plugin: "com.github.spotbugs"
     spotbugs {
-        excludeFilter = file("${rootProject.projectDir}/tools/conf/spotbugs-exclude.xml")
+        excludeFilter = file("${rootProject.projectDir}/tools/conf/findbugs-exclude.xml")
         ignoreFailures = false
         spotbugsTest.enabled = true
     }
@@ -26,10 +26,10 @@ pmd {
     ruleSets = [] // workaround pmd gradle plugin bug
     ruleSetFiles = files("${rootProject.projectDir}/tools/conf/pmd.xml")
 }
-tasks.withType(Pmd){
-    reports{
-        xml.enabled=true
-        html.enabled=true
+tasks.withType(Pmd) {
+    reports {
+        xml.required = true
+        html.required = true
     }
 }
 
@@ -38,11 +38,32 @@ checkstyle {
     toolVersion = "8.26"
     ignoreFailures = false
     checkstyleTest.enabled = true
+    configProperties = [
+            "checkstyle.suppressions.file" : file("${rootProject.projectDir}/tools/conf/suppressions.xml"),
+            "checkstyle.licenseHeader.file": file("${rootProject.projectDir}/tools/conf/licenseHeader.java")
+    ]
     configFile = file("${rootProject.projectDir}/tools/conf/checkstyle.xml")
+}
+checkstyleMain {
+    classpath += configurations.compileClasspath
 }
 tasks.withType(Checkstyle) {
     reports {
-        xml.enabled false
-        html.enabled true
+        xml.required = false
+        html.required = true
     }
 }
+
+apply plugin: 'jacoco'
+jacoco {
+    toolVersion = "0.8.8"
+}
+jacocoTestReport {
+    reports {
+        xml.required = true
+        csv.required = false
+    }
+}
+
+test.finalizedBy jacocoTestReport
+build.dependsOn javadoc
