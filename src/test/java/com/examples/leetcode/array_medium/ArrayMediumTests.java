@@ -165,6 +165,15 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL215KthLargestElementInAnArray() {
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        int k = 2;
+        int res = new L215KthLargestElementInAnArray().findKthLargest(nums, k);
+        int expected = 5;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL274HIndex() {
         int[] citations = {3, 0, 6, 1, 5};
         int res = new L274HIndex().hIndex(citations);
