@@ -1,6 +1,5 @@
 package com.examples.leetcode.array_medium;
 
-
 /** https://leetcode.com/problems/kth-largest-element-in-an-array/description/ */
 public class L215KthLargestElementInAnArray {
 

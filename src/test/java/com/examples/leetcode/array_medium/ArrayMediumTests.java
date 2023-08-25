@@ -182,6 +182,14 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL287FindTheDuplicateNumber() {
+        int[] nums = {1, 3, 4, 2, 2};
+        int res = new L287FindTheDuplicateNumber().findDuplicate(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL665NonDecreasingArray() {
         int[] nums = {4, 2, 1};
         boolean res = new L665NonDecreasingArray().checkPossibility(nums);
