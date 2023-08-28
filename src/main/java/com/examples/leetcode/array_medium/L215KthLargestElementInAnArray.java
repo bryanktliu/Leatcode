@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_medium;
 
-/** https://leetcode.com/problems/kth-largest-element-in-an-array/description/ */
+/** https://leetcode.com/problems/kth-largest-element-in-an-array/ */
 public class L215KthLargestElementInAnArray {
 
     public int findKthLargest(int[] nums, int k) {

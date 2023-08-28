@@ -2,7 +2,7 @@ package com.examples.leetcode.array_medium;
 
 import java.util.Arrays;
 
-/** https://leetcode.com/problems/find-the-value-of-the-partition/description/ */
+/** https://leetcode.com/problems/find-the-value-of-the-partition/ */
 public class L2740FindTheValueOfThePartition {
 
     public int findValueOfPartition(int[] nums) {

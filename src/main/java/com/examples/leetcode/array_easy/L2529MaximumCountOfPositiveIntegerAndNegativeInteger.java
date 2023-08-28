@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/
- */
+/** https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/ */
 public class L2529MaximumCountOfPositiveIntegerAndNegativeInteger {
 
     public int maximumCount(int[] nums) {

@@ -2,7 +2,7 @@ package com.examples.leetcode.array_medium;
 
 import java.util.Arrays;
 
-/** https://leetcode.com/problems/product-of-array-except-self/description/ */
+/** https://leetcode.com/problems/product-of-array-except-self/ */
 public class L238ProductOfArrayExceptSelf {
 
     public int[] productExceptSelf(int[] nums) {

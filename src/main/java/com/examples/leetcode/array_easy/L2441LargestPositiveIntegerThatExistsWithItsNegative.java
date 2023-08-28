@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/
- */
+/** https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/ */
 public class L2441LargestPositiveIntegerThatExistsWithItsNegative {
 
     public int findMaxK(int[] nums) {

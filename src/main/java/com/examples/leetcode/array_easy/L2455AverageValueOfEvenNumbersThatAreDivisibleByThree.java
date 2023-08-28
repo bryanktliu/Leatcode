@@ -1,8 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/**
- * https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/description/
- */
+/** https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/ */
 public class L2455AverageValueOfEvenNumbersThatAreDivisibleByThree {
 
     public int averageValue(int[] nums) {

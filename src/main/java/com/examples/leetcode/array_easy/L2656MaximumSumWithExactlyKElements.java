@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/** https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/description/ */
+/** https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/ */
 public class L2656MaximumSumWithExactlyKElements {
 
     public int maximizeSum(int[] nums, int k) {

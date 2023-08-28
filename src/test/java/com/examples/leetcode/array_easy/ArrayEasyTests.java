@@ -2047,4 +2047,13 @@ public class ArrayEasyTests {
         int expected = 3;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2828CheckIfAStringIsAnAcronymOfWords() {
+        List<String> words = Arrays.asList("alice", "bob", "charlie");
+        String s = "abc";
+        boolean res = new L2828CheckIfAStringIsAnAcronymOfWords().isAcronym(words, s);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
 }

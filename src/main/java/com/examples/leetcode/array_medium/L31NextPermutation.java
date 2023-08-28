@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_medium;
 
-/** https://leetcode.com/problems/next-permutation/description/ */
+/** https://leetcode.com/problems/next-permutation/ */
 public class L31NextPermutation {
 
     public void nextPermutation(int[] nums) {

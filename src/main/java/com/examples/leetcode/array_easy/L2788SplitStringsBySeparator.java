@@ -3,7 +3,7 @@ package com.examples.leetcode.array_easy;
 import java.util.ArrayList;
 import java.util.List;
 
-/** https://leetcode.com/problems/split-strings-by-separator/description/ */
+/** https://leetcode.com/problems/split-strings-by-separator/ */
 public class L2788SplitStringsBySeparator {
 
     public List<String> splitWordsBySeparator(List<String> words, char separator) {

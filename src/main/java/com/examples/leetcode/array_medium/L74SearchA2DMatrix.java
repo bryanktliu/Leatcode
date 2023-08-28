@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_medium;
 
-/** https://leetcode.com/problems/search-a-2d-matrix/description/ */
+/** https://leetcode.com/problems/search-a-2d-matrix/ */
 public class L74SearchA2DMatrix {
 
     public boolean searchMatrix(int[][] matrix, int target) {

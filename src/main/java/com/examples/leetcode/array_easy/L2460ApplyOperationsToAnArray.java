@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/** https://leetcode.com/problems/apply-operations-to-an-array/description/ */
+/** https://leetcode.com/problems/apply-operations-to-an-array/ */
 public class L2460ApplyOperationsToAnArray {
 
     public int[] applyOperations(int[] nums) {
