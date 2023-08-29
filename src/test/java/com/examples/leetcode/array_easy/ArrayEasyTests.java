@@ -2056,4 +2056,12 @@ public class ArrayEasyTests {
         boolean expected = true;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2833FurthestPointFromOrigin() {
+        String moves = "L_RL__R";
+        int res = new L2833FurthestPointFromOrigin().furthestDistanceFromOrigin(moves);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
 }
