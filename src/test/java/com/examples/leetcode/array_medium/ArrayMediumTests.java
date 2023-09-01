@@ -139,6 +139,14 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL179LargestNumber() {
+        int[] nums = {10, 2};
+        String res = new L179LargestNumber().largestNumber(nums);
+        String expected = "210";
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL198HouseRobber() {
         int[] nums = {1, 2, 3, 1};
         int res = new L198HouseRobber().rob(nums);

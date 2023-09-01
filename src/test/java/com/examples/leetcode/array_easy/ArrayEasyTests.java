@@ -1748,6 +1748,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2475NumberOfUnequalTripletsInArray() {
+        int[] nums = {4, 4, 2, 4, 3};
+        int res = new L2475NumberOfUnequalTripletsInArray().unequalTriplets(nums);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2496MaximumValueOfAStringInAnArray() {
         String[] strs = {"alic3", "bob", "3", "4", "00000"};
         int res = new L2496MaximumValueOfAStringInAnArray().maximumValue(strs);
