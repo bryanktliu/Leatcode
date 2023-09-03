@@ -198,6 +198,15 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL347TopKFrequentElements() {
+        int[] nums = {1, 1, 1, 2, 2, 3};
+        int k = 2;
+        int[] res = new L347TopKFrequentElements().topKFrequent(nums, k);
+        int[] expected = {1, 2};
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL665NonDecreasingArray() {
         int[] nums = {4, 2, 1};
         boolean res = new L665NonDecreasingArray().checkPossibility(nums);
