@@ -190,6 +190,14 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void testL275HIndexII() {
+        int[] citations = {0, 1, 3, 5, 6};
+        int res = new L275HIndexII().hIndex(citations);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL287FindTheDuplicateNumber() {
         int[] nums = {1, 3, 4, 2, 2};
         int res = new L287FindTheDuplicateNumber().findDuplicate(nums);
