@@ -455,4 +455,12 @@ public class HashtableEasyTests {
         String expected = "abc";
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2729CheckIfTheNumberIsFascinating() {
+        int n = 192;
+        boolean res = new L2729CheckIfTheNumberIsFascinating().isFascinating(n);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
 }
