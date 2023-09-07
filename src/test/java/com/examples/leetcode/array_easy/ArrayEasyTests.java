@@ -1894,6 +1894,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2614PrimeInDiagonal() {
+        int[][] nums = {{1, 2, 3}, {5, 6, 7}, {9, 10, 11}};
+        int res = new L2614PrimeInDiagonal().diagonalPrime(nums);
+        int expected = 11;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2639FindTheWidthOfColumnsOfAGrid() {
         int[][] grid = {{1}, {22}, {333}};
         int[] res = new L2639FindTheWidthOfColumnsOfAGrid().findColumnWidth(grid);

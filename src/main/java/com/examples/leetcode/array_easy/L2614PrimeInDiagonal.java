@@ -4,47 +4,33 @@ package com.examples.leetcode.array_easy;
 public class L2614PrimeInDiagonal {
 
     public int diagonalPrime(int[][] nums) {
-        int max = 1;
-        for (int[] num : nums) {
-            for (int j = 0; j < nums.length; ++j) {
-                if (num[j] % 2 != 0) {
-                    max = Math.max(max, num[j]);
-                }
-                if (num[nums.length - 1 - j] % 2 != 0) {
-                    max = Math.max(max, num[nums.length - 1 - j]);
-                }
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i][i] > max && isPrime(nums[i][i])) {
+                max = nums[i][i];
+            }
+            if (isPrime(nums[i][nums.length - 1 - i])) {
+                max = nums[i][nums.length - 1 - i];
             }
         }
-        max = 0;
-        boolean[] notPrime = genPrimes(max);
-        for (int[] num : nums) {
-            for (int j = 0; j < nums.length; ++j) {
-                if (num[j] == 2 || num[nums.length - 1 - j] == 2) {
-                    max = Math.max(max, 2);
-                }
-                if (num[j] % 2 != 0 && !notPrime[num[j]]) {
-                    max = Math.max(max, num[j]);
-                }
-                if (num[nums.length - 1 - j] % 2 != 0 && !notPrime[num[j]]) {
-                    max = Math.max(max, num[nums.length - 1 - j]);
-                }
-            }
+        if (max == 1) {
+            return 0;
         }
         return max;
     }
 
-    public boolean[] genPrimes(int n) {
-        boolean[] res = new boolean[++n];
-        res[0] = true;
-        res[1] = true;
-        for (int i = 3; i < n; i += 2) {
-            if (res[i]) {
-                continue;
-            }
-            for (int j = i * i; j < n; j += 2 * i) {
-                res[j] = true;
+    public boolean isPrime(int n) {
+        if (n == 2) {
+            return true;
+        }
+        if (n % 2 == 0) {
+            return false;
+        }
+        for (int i = 3; i <= Math.sqrt(n); i += 2) {
+            if (n % i == 0) {
+                return false;
             }
         }
-        return res;
+        return true;
     }
 }
