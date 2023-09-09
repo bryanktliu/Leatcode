@@ -380,6 +380,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL2062CountVowelSubstringsOfAString() {
+        String word = "aeiouu";
+        int res = new L2062CountVowelSubstringsOfAString().countVowelSubstrings(word);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2068CheckWhetherTwoStringsAreAlmostEquivalent() {
         String word1 = "aaaa";
         String word2 = "bccb";
