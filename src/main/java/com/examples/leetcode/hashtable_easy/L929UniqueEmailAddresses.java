@@ -2,6 +2,7 @@ package com.examples.leetcode.hashtable_easy;
 
 import java.util.HashSet;
 
+/** https://leetcode.com/problems/unique-email-addresses/ */
 public class L929UniqueEmailAddresses {
 
     public int numUniqueEmails(String[] emails) {

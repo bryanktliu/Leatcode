@@ -3,33 +3,45 @@ package com.examples.leetcode.hashtable_easy;
 /** https://leetcode.com/problems/count-vowel-substrings-of-a-string/ */
 public class L2062CountVowelSubstringsOfAString {
 
-    public int countVowelSubstrings(String word) {
-        char[] chars = word.toCharArray();
+    public int countVowelSubstrings2(String word) {
+        int len = word.length();
         int count = 0;
         int[] counts = new int[26];
-        for (int i = 0; i < chars.length - 4; ++i) {
-            int vowels = 0;
-            for (int j = i; j < chars.length; ++j) {
-                if (counts[chars[j] - 'a'] == -1) {
+        resetVowels(counts);
+        int vowels = 0;
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < len; ++i) {
+            int c = word.charAt(i) - 'a';
+            if (counts[c] == 0) {
+                start = i + 1;
+                end = start;
+                vowels = 0;
+                resetVowels(counts);
+            } else {
+                ++counts[c];
+                if (counts[c] == 2) {
                     ++vowels;
-                    counts[chars[j] - 'a'] = 1;
-                } else if (counts[chars[j] - 'a'] == 0) {
-                    break;
                 }
-                if (vowels == 5) {
-                    ++count;
+                while (vowels == 5) {
+                    c = word.charAt(end) - 'a';
+                    if (counts[c] == 2) {
+                        --vowels;
+                    }
+                    --counts[c];
+                    ++end;
                 }
+                count += end - start;
             }
-            resetVowels(counts);
         }
         return count;
     }
 
     public void resetVowels(int[] counts) {
-        counts['a' - 'a'] = -1;
-        counts['e' - 'a'] = -1;
-        counts['i' - 'a'] = -1;
-        counts['o' - 'a'] = -1;
-        counts['u' - 'a'] = -1;
+        counts['a' - 'a'] = 1;
+        counts['e' - 'a'] = 1;
+        counts['i' - 'a'] = 1;
+        counts['o' - 'a'] = 1;
+        counts['u' - 'a'] = 1;
     }
 }

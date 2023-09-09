@@ -169,7 +169,7 @@ public class HashtableEasyTests {
 
     @Test
     public void testL720LongestWordInDictionary() {
-        String[] words = {"wo", "wor", "worl", "world"};
+        String[] words = {"w", "wo", "wor", "worl", "world"};
         String res = new L720LongestWordInDictionary().longestWord(words);
         Assert.assertEquals(res, "world");
     }
@@ -226,14 +226,18 @@ public class HashtableEasyTests {
         String s1 = "this apple is sweet";
         String s2 = "this apple is sour";
         String[] res = new L884UncommonWordsFromTwoSentences().uncommonFromSentences(s1, s2);
-        Assert.assertEquals(res, new String[] {"sour", "sweet"});
+        Assert.assertEquals(res, new String[] {"sweet", "sour"});
     }
 
     @Test
     public void testL929UniqueEmailAddresses() {
-        String[] emails = {"test.email+alex@leetcode.com", "test.email@leetcode.com"};
+        String[] emails = {
+            "test.email+alex@leetcode.com",
+            "test.e.mail+bob.cathy@leetcode.com",
+            "testemail+david@lee.tcode.com"
+        };
         int res = new L929UniqueEmailAddresses().numUniqueEmails(emails);
-        Assert.assertEquals(res, 3);
+        Assert.assertEquals(res, 2);
     }
 
     @Test
@@ -382,7 +386,7 @@ public class HashtableEasyTests {
     @Test
     public void testL2062CountVowelSubstringsOfAString() {
         String word = "aeiouu";
-        int res = new L2062CountVowelSubstringsOfAString().countVowelSubstrings(word);
+        int res = new L2062CountVowelSubstringsOfAString().countVowelSubstrings2(word);
         int expected = 2;
         Assert.assertEquals(res, expected);
     }
