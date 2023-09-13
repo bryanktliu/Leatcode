@@ -469,6 +469,14 @@ public class HashtableEasyTests {
     }
 
     @Test
+    public void testL2716MinimizeStringLength() {
+        String s = "aaabc";
+        int res = new L2716MinimizeStringLength().minimizedStringLength(s);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2729CheckIfTheNumberIsFascinating() {
         int n = 192;
         boolean res = new L2729CheckIfTheNumberIsFascinating().isFascinating(n);
