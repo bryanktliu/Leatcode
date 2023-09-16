@@ -483,4 +483,13 @@ public class HashtableEasyTests {
         boolean expected = true;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2848PointsThatIntersectWithCars() {
+        List<List<Integer>> nums =
+                Arrays.asList(Arrays.asList(3, 6), Arrays.asList(1, 5), Arrays.asList(4, 7));
+        int res = new L2848PointsThatIntersectWithCars().numberOfPoints(nums);
+        int expected = 7;
+        Assert.assertEquals(res, expected);
+    }
 }
