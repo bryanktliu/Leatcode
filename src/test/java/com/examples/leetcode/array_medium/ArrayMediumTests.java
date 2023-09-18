@@ -215,6 +215,15 @@ public class ArrayMediumTests {
     }
 
     @Test
+    public void L378KthSmallestElementInASortedMatrix() {
+        int[][] matrix = {{1, 5, 9}, {10, 11, 13}, {12, 13, 15}};
+        int k = 8;
+        int res = new L378KthSmallestElementInASortedMatrix().kthSmallest(matrix, k);
+        int expected = 13;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL665NonDecreasingArray() {
         int[] nums = {4, 2, 1};
         boolean res = new L665NonDecreasingArray().checkPossibility(nums);
