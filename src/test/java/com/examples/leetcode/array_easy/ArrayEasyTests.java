@@ -2080,4 +2080,13 @@ public class ArrayEasyTests {
         int expected = 3;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2859SumOfValuesAtIndicesWithKSetBits() {
+        List<Integer> nums = Arrays.asList(5, 10, 1, 5, 2);
+        int k = 1;
+        int res = new L2859SumOfValuesAtIndicesWithKSetBits().sumIndicesWithKSetBits(nums, k);
+        int expected = 13;
+        Assert.assertEquals(res, expected);
+    }
 }

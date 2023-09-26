@@ -2,7 +2,7 @@ package com.examples.leetcode.hashtable_easy;
 
 import java.util.List;
 
-/** https://leetcode.com/problems/points-that-intersect-with-cars/description/ */
+/** https://leetcode.com/problems/points-that-intersect-with-cars/ */
 public class L2848PointsThatIntersectWithCars {
 
     public int numberOfPoints(List<List<Integer>> nums) {

@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_medium;
 
-/** https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/ */
+/** https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/ */
 public class L378KthSmallestElementInASortedMatrix {
 
     public int kthSmallest(int[][] matrix, int k) {
