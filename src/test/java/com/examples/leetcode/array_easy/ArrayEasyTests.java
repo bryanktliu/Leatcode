@@ -2082,6 +2082,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2855MinimumRightShiftsToSortTheArray() {
+        List<Integer> nums = Arrays.asList(3, 4, 5, 1, 2);
+        int res = new L2855MinimumRightShiftsToSortTheArray().minimumRightShifts(nums);
+        int expected = 2;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2859SumOfValuesAtIndicesWithKSetBits() {
         List<Integer> nums = Arrays.asList(5, 10, 1, 5, 2);
         int k = 1;
