@@ -2097,4 +2097,13 @@ public class ArrayEasyTests {
         int expected = 13;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2869MinimumOperationsToCollectElements() {
+        List<Integer> nums = Arrays.asList(3, 1, 5, 4, 2);
+        int k = 2;
+        int res = new L2869MinimumOperationsToCollectElements().minOperations(nums, k);
+        int expected = 4;
+        Assert.assertEquals(res, expected);
+    }
 }
