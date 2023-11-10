@@ -2106,4 +2106,12 @@ public class ArrayEasyTests {
         int expected = 4;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2899LastVisitedIntegers() {
+        List<String> words = Arrays.asList("1", "2", "prev", "prev", "prev");
+        List<Integer> res = new L2899LastVisitedIntegers().lastVisitedIntegers(words);
+        List<Integer> expected = Arrays.asList(2, 1, -1);
+        Assert.assertEquals(res, expected);
+    }
 }
