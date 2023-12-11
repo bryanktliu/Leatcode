@@ -2114,4 +2114,13 @@ public class ArrayEasyTests {
         List<Integer> expected = Arrays.asList(2, 1, -1);
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2917FindTheKOrOfAnArray() {
+        int[] nums = {7, 12, 9, 8, 9, 15};
+        int k = 4;
+        int res = new L2917FindTheKOrOfAnArray().findKOr(nums, k);
+        int expected = 9;
+        Assert.assertEquals(res, expected);
+    }
 }
