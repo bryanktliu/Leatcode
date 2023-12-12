@@ -1,6 +1,6 @@
 package com.examples.leetcode.array_easy;
 
-/** https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/description/ */
+/** https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/ */
 public class L2917FindTheKOrOfAnArray {
 
     public int findKOr(int[] nums, int k) {

@@ -2123,4 +2123,13 @@ public class ArrayEasyTests {
         int expected = 9;
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void testL2942FindWordsContainingCharacter() {
+        String[] words = {"leet", "code"};
+        char x = 'e';
+        List<Integer> res = new L2942FindWordsContainingCharacter().findWordsContaining(words, x);
+        List<Integer> expected = Arrays.asList(0, 1);
+        Assert.assertEquals(res, expected);
+    }
 }
