@@ -2125,6 +2125,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2923FindChampionI() {
+        int[][] grid = {{0, 1}, {0, 0}};
+        int res = new L2923FindChampionI().findChampion(grid);
+        int expected = 0;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2942FindWordsContainingCharacter() {
         String[] words = {"leet", "code"};
         char x = 'e';
