@@ -2140,4 +2140,13 @@ public class ArrayEasyTests {
         List<Integer> expected = Arrays.asList(0, 1);
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void L2946MatrixSimilarityAfterCyclicShifts() {
+        int[][] mat = {{1, 2, 1, 2}, {5, 5, 5, 5}, {6, 3, 6, 3}};
+        int k = 2;
+        boolean res = new L2946MatrixSimilarityAfterCyclicShifts().areSimilar(mat, 2);
+        boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
 }
