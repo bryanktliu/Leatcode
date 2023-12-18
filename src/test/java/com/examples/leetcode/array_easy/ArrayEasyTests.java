@@ -2145,8 +2145,16 @@ public class ArrayEasyTests {
     public void L2946MatrixSimilarityAfterCyclicShifts() {
         int[][] mat = {{1, 2, 1, 2}, {5, 5, 5, 5}, {6, 3, 6, 3}};
         int k = 2;
-        boolean res = new L2946MatrixSimilarityAfterCyclicShifts().areSimilar(mat, 2);
+        boolean res = new L2946MatrixSimilarityAfterCyclicShifts().areSimilar(mat, k);
         boolean expected = true;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void L2951FindThePeaks() {
+        int[] mountain = {2, 4, 4};
+        List<Integer> res = new L2951FindThePeaks().findPeaks(mountain);
+        List<Integer> expected = Collections.emptyList();
         Assert.assertEquals(res, expected);
     }
 }
