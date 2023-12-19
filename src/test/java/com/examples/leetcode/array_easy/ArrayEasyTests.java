@@ -2133,6 +2133,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void L2932MaximumStrongPairXORI() {
+        int[] nums = {1, 2, 3, 4, 5};
+        int res = new L2932MaximumStrongPairXORI().maximumStrongPairXor(nums);
+        int expected = 7;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2942FindWordsContainingCharacter() {
         String[] words = {"leet", "code"};
         char x = 'e';
