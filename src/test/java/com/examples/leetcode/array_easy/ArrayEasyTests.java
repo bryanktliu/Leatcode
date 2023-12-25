@@ -2165,4 +2165,14 @@ public class ArrayEasyTests {
         List<Integer> expected = Collections.emptyList();
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void L2956FindCommonElementsBetweenTwoArrays() {
+        int[] nums1 = {4, 3, 2, 3, 1};
+        int[] nums2 = {2, 2, 5, 2, 3, 6};
+        int[] res =
+                new L2956FindCommonElementsBetweenTwoArrays().findIntersectionValues(nums1, nums2);
+        int[] expected = {3, 4};
+        Assert.assertEquals(res, expected);
+    }
 }
