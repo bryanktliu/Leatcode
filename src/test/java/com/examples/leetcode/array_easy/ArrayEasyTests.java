@@ -2175,4 +2175,14 @@ public class ArrayEasyTests {
         int[] expected = {3, 4};
         Assert.assertEquals(res, expected);
     }
+
+    @Test
+    public void L2960CountTestedDevicesAfterTestOperations() {
+        int[] batteryPercentages = {1, 1, 2, 1, 3};
+        int res =
+                new L2960CountTestedDevicesAfterTestOperations()
+                        .countTestedDevices(batteryPercentages);
+        int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
 }
