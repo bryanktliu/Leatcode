@@ -2116,6 +2116,14 @@ public class ArrayEasyTests {
     }
 
     @Test
+    public void testL2908MinimumSumOfMountainTripletsI() {
+        int[] nums = {8, 6, 1, 5, 3};
+        int res = new L2908MinimumSumOfMountainTripletsI().minimumSum(nums);
+        int expected = 9;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
     public void testL2917FindTheKOrOfAnArray() {
         int[] nums = {7, 12, 9, 8, 9, 15};
         int k = 4;
