@@ -587,7 +587,7 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L1013PartitionArrayIntoThreePartsWithEqualSum() {
+    public void testL1013PartitionArrayIntoThreePartsWithEqualSum() {
         int[] arr = {3, 3, 6, 5, -2, 2, 5, 1, -9, 4};
         boolean res =
                 new L1013PartitionArrayIntoThreePartsWithEqualSum().canThreePartsEqualSum(arr);
@@ -2141,7 +2141,7 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L2932MaximumStrongPairXORI() {
+    public void testL2932MaximumStrongPairXORI() {
         int[] nums = {1, 2, 3, 4, 5};
         int res = new L2932MaximumStrongPairXORI().maximumStrongPairXor(nums);
         int expected = 7;
@@ -2158,7 +2158,7 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L2946MatrixSimilarityAfterCyclicShifts() {
+    public void testL2946MatrixSimilarityAfterCyclicShifts() {
         int[][] mat = {{1, 2, 1, 2}, {5, 5, 5, 5}, {6, 3, 6, 3}};
         int k = 2;
         boolean res = new L2946MatrixSimilarityAfterCyclicShifts().areSimilar(mat, k);
@@ -2167,7 +2167,7 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L2951FindThePeaks() {
+    public void testL2951FindThePeaks() {
         int[] mountain = {2, 4, 4};
         List<Integer> res = new L2951FindThePeaks().findPeaks(mountain);
         List<Integer> expected = Collections.emptyList();
@@ -2175,7 +2175,7 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L2956FindCommonElementsBetweenTwoArrays() {
+    public void testL2956FindCommonElementsBetweenTwoArrays() {
         int[] nums1 = {4, 3, 2, 3, 1};
         int[] nums2 = {2, 2, 5, 2, 3, 6};
         int[] res =
@@ -2185,12 +2185,20 @@ public class ArrayEasyTests {
     }
 
     @Test
-    public void L2960CountTestedDevicesAfterTestOperations() {
+    public void testL2960CountTestedDevicesAfterTestOperations() {
         int[] batteryPercentages = {1, 1, 2, 1, 3};
         int res =
                 new L2960CountTestedDevicesAfterTestOperations()
                         .countTestedDevices(batteryPercentages);
         int expected = 3;
+        Assert.assertEquals(res, expected);
+    }
+
+    @Test
+    public void testL2974MinimumNumberGame() {
+        int[] nums = {5, 4, 2, 3};
+        int[] res = new L2974MinimumNumberGame().numberGame(nums);
+        int[] expected = {3, 2, 5, 4};
         Assert.assertEquals(res, expected);
     }
 }
